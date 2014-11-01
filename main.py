@@ -5,7 +5,7 @@ import re
 import nltk
 
 def main(args):
-    learn_trainingset(args.trainingfile, args.testfile, args.outputfile, args.custominfofile)
+    learn_trainingset(args.trainingfile, args.testfile, args.outputfile, args.custominfofile, args.topN_words )
 
 def process_commentary(commentary, custom_info, method):
     if ": \\\"" in commentary['text'] or commentary['ball'] == 0:
@@ -37,7 +37,8 @@ def process_commentary(commentary, custom_info, method):
             return word
     # print(words)
     filtered_words = [ word.lower() for word in words if strip_markers(word).lower() not in nltk.corpus.stopwords.words('english') ]
-    if all( [ word[:2] == word[-2:] == '$$' for word in filtered_words ] ):
+    #print('\t'+str(filtered_words))
+    if all( word[:2] == '$$' or word[-2:] == '$$' for word in filtered_words ):
         return False
     #print(filtered_words)
 
@@ -57,7 +58,7 @@ def process_commentary(commentary, custom_info, method):
     # commentary['boldphrases'] = soup.p.find_all(True,recursive=False) # bold font/commsImportant. do something later
     # return commentary
 
-def learn_trainingset(trainingfile, testfile, outputfile, custominfofile):
+def learn_trainingset(trainingfile, testfile, outputfile, custominfofile, topN_words):
     with open(trainingfile,'r') as f:
         training_data = json.load(f)
     tagged_commentaries = []
@@ -72,11 +73,8 @@ def learn_trainingset(trainingfile, testfile, outputfile, custominfofile):
                 continue
             tagged_commentaries.append(processed_commentary)
 
-    allwords = set()
-    for tagged_commmentary in tagged_commentaries:
-        [ allwords.add(word) for word in tagged_commmentary[0] ]
+    wordset = getwordset( tagged_commentaries, topN_words )
 
-    #print(allwords)
     def feature_extractor( commentary ):
         words = set(commentary)
         features = {}
@@ -93,7 +91,7 @@ def learn_trainingset(trainingfile, testfile, outputfile, custominfofile):
         features[ '$highlight-event$' ] = any( word[:2] == word[-2:] == '$$' for word in words )
         words = set( word for word in words if not (word[:2] == word[-2:] =='$$') )
 
-        for word in allwords:
+        for word in wordset['best_words']:
             features['contains(%s)' % word ] = ( word in words )
         return features
 
@@ -111,15 +109,17 @@ def learn_trainingset(trainingfile, testfile, outputfile, custominfofile):
         print( informative_features )
 
         for commentary in testset['commentary']:
-            print(commentary)
             preprocessed_test = process_commentary(commentary, custom_info,'test')
             if not preprocessed_test:
+                #print(commentary)
+                #print(preprocessed_test)
                 continue
 
             features = feature_extractor(preprocessed_test)
             classifier_result = classifier.classify(features)
-            print( classifier_result )
-            print( '.....................................' )
+            # print( commentary )
+            # print( classifier_result )
+            # print( '.....................................' )
             commentary['isHighlight'] = classifier_result
             highlight_result.append( commentary )
 
@@ -129,12 +129,40 @@ def learn_trainingset(trainingfile, testfile, outputfile, custominfofile):
     with open( outputfile, 'w') as outfile:
         json.dump(testset,outfile)
 
+
+def getwordset(tagged_commentaries, topN_words):
+    allwords = set()
+    allwords_fd = nltk.probability.FreqDist()
+    allwords_tagged_fd = nltk.probability.ConditionalFreqDist()
+
+    for tagged_commmentary in tagged_commentaries:
+        for word in tagged_commmentary[0]:
+            allwords.add(word)
+            allwords_fd[word] += 1
+            allwords_tagged_fd[tagged_commmentary[1]][word] += 1
+
+    pos_word_count = allwords_tagged_fd[True].N()
+    neg_word_count = allwords_tagged_fd[False].N()
+    total_word_count = pos_word_count + neg_word_count
+
+    word_scores = {}
+
+    for word, freq in allwords_fd.items():
+        pos_score = nltk.metrics.BigramAssocMeasures.chi_sq(allwords_tagged_fd[True][word], (freq, pos_word_count), total_word_count)
+        neg_score = nltk.metrics.BigramAssocMeasures.chi_sq(allwords_tagged_fd[False][word], (freq, neg_word_count), total_word_count)
+        word_scores[word] = pos_score + neg_score
+
+    best_words = set( word for word, score in sorted(word_scores.items(), key=lambda item: item[1], reverse=True)[:topN_words] )
+
+    return { 'allwords': allwords, 'best_words': best_words }
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--train', help="Specify training data set file, format: JSON", action='store', dest='trainingfile',required=True)
     parser.add_argument('-o', '--output', help="Specify output file", action='store',default='output.json',dest='outputfile')
     parser.add_argument('-t', '--test', help="Specify test file", action='store',dest='testfile',required=True)
     parser.add_argument('-c', '--custom', help="Specify custom information file", action='store', dest='custominfofile', required=True)
+    parser.add_argument('-b', '--topN_words', help="Set a limit to take the most N number of informative words", action='store', dest='topN_words', default=50,type=int)
     args = parser.parse_args()
 
     main(args)
