@@ -1,2 +1,6 @@
 .#*
 data/tmp
+*.pickle
+*.pyc
+*.json
+!data
