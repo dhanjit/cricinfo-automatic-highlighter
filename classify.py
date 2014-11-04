@@ -35,7 +35,7 @@ def main(args):
                 #print(preprocessed_test)
                 continue
 
-            features = classifier.feature_extractor.featureset(commentary)
+            features = classifier.feature_extractor.featureset(preprocessed_test)
             classifier_result = classifier.classify(features)
             # print( commentary )
             # print( classifier_result )
