@@ -14,7 +14,7 @@ def main(args):
     test_data = json.load(f)
     f.close()
 
-    with open(args.classifier) as f:
+    with open(args.classifier, 'rb') as f:
         classifier = pickle.load(f)
 
     with open(args.custominfofile) as f:
