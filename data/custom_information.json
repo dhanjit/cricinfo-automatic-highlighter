@@ -9,7 +9,9 @@
     "terrible": true,
     "magnificient": true,
     "exciting": true,
-    "important": true
+    "important": true,
+    "terrible": true,
+    "blowing": true,
   },
   "combinable phrases": {
     "1 run": true,
