@@ -37,10 +37,12 @@ def main(args):
 
             features = classifier.feature_extractor.featureset(preprocessed_test)
             classifier_result = classifier.classify(features)
+            prob_dist = classifier.prob_classify(features)
             # print( commentary )
             # print( classifier_result )
             # print( '.....................................' )
-            commentary['isHighlight'] = classifier_result
+            commentary['isHighlight'] = prob_dist.max()
+            commentary['score' ] = prob_dist.prob( True )
             highlight_result.append( commentary )
 
         testset['commentary'] = highlight_result
