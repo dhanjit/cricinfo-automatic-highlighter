@@ -15,11 +15,15 @@ def process_commentary(commentary, custom_info, method):
     # print(text)
     punctuations = string.punctuation
     valid_punctuations = '$!'
+    token_punctuations = '!'
     for punctuation in valid_punctuations:
         punctuations = punctuations.replace( punctuation,'')
 
     for punctuation in punctuations:
         text = text.replace(punctuation,' ')
+
+    for punctuation in token_punctuations:
+        text = text.replace(punctuation, ' ' + punctuation + ' ' )
 
     words = text.split()
 #    print(words)
@@ -83,6 +87,13 @@ class FeatureExtractor:
                 words.remove(exciting_word)
 
         features[ '$exciting-count$' ] = int( features[ '$exciting-count$' ] / self.exciting_count_factor )
+
+        if '!' in words:
+            features[ '$exclamation$' ] = True
+            words.remove('!')
+        else:
+            features[ '$exclamation$' ] = False
+
         # print( features  )
         # print( '.................................' )
         features[ '$highlight-event$' ] = any( word[:2] == word[-2:] == '$$' for word in words )
