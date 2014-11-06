@@ -56,9 +56,13 @@ def process_commentary(commentary, custom_info, method):
 class FeatureExtractor:
 
     # Create a FeatureExtractor with some custom info
-    def __init__(self, custom_info, wordset):
+    def __init__(self, custom_info, wordset, feature_config ):
         self.custom_info = custom_info
         self.wordset = wordset
+
+        self.length_factor = feature_config.get( 'length_factor', 10 )
+        self.length_norm = feature_config.get( 'length_norm', 2 )
+        self.exciting_count_factor = feature_config.get( 'exciting_count_factor', 2 )
 
     # Return the feature set of the commentary
     def featureset(self, commentary):
@@ -66,14 +70,21 @@ class FeatureExtractor:
         features = {}
         custom_event_words = { 'six': [ '$$six$$' ], 'four': [ '$$four$$' ], 'out': [ '$$out$$' ], 'drop':[ '$$drop$$', '$$dropped$$' ] }
         features[ '$exciting$'] = False
+        features[ '$exciting-count$' ] = 0
         features[ '$important$' ] = False
-        features[ '$longlength$' ] = ( len(commentary) / 10 > 2 )
+        features[ '$longlength$' ] = ( len(commentary) / self.length_factor > self.length_norm )
 
+        # print( commentary )
         for exciting_word in self.custom_info['exciting words']:
-            features['$exciting$'] = ( exciting_word in words )
             if exciting_word in words:
+                features[ '$exciting$' ] = True
+                # print( 'found ' + exciting_word )
+                features[ '$exciting-count$' ] += 1
                 words.remove(exciting_word)
 
+        features[ '$exciting-count$' ] = int( features[ '$exciting-count$' ] / self.exciting_count_factor )
+        # print( features  )
+        # print( '.................................' )
         features[ '$highlight-event$' ] = any( word[:2] == word[-2:] == '$$' for word in words )
         words = set( word for word in words if not (word[:2] == word[-2:] =='$$') )
 

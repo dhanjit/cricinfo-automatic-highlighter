@@ -7,15 +7,22 @@ import pickle
 from commentary import process_commentary, FeatureExtractor, Classifier
 
 def main(args):
-    learn_trainingset(args.trainingfile, args.custominfofile, args.topN_words, args.classifier_file)
-
-def learn_trainingset(trainingfile, custominfofile, topN_words, classifier_file):
-    with open(trainingfile,'r') as f:
+    with open(args.training_file,'r') as f:
         training_data = json.load(f)
-    tagged_commentaries = []
 
-    with open(custominfofile, 'r') as f:
+    with open(args.custominfo_file, 'r') as f:
         custom_info = json.load(f)
+
+    configs = [ 'length_factor', 'length_norm', 'exciting_count_factor' ]
+    feature_config = { config: getattr(args,config) for config in configs if getattr(args,config) }
+
+    classifier = learn_trainingset(training_data, custom_info, args.topN_words, feature_config)
+
+    with open(args.classifier_file, 'wb') as f:
+        pickle.dump(classifier, f)
+
+def learn_trainingset(training_data, custom_info, topN_words, feature_config):
+    tagged_commentaries = []
 
     for trainingset in training_data:
         for commentary in trainingset['commentary']:
@@ -26,7 +33,7 @@ def learn_trainingset(trainingfile, custominfofile, topN_words, classifier_file)
 
     wordset = getwordset( tagged_commentaries, topN_words )
 
-    feature_extractor = FeatureExtractor(custom_info, wordset)
+    feature_extractor = FeatureExtractor(custom_info, wordset, feature_config )
 
     training_set = nltk.classify.apply_features(feature_extractor.featureset, tagged_commentaries)
 
@@ -39,8 +46,7 @@ def learn_trainingset(trainingfile, custominfofile, topN_words, classifier_file)
     # to be retrieved when classifying test data.
     classifier.set_feature_extractor(feature_extractor)
 
-    with open(classifier_file, 'wb') as f:
-        pickle.dump(classifier, f)
+    return classifier
 
 def getwordset(tagged_commentaries, topN_words):
     allwords = set()
@@ -70,10 +76,13 @@ def getwordset(tagged_commentaries, topN_words):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-i', '--train', help="Specify training data set file, format: JSON", action='store', dest='trainingfile', default='data/trainingset.json')
-    parser.add_argument('-c', '--custom', help="Specify custom information file", action='store', dest='custominfofile', default='data/custom_information.json')
+    parser.add_argument('-i', '--train', help="Specify training data set file, format: JSON", action='store', dest='training_file', default='data/trainingset.json')
+    parser.add_argument('-c', '--custom', help="Specify custom information file", action='store', dest='custominfo_file', default='data/custom_information.json')
     parser.add_argument('-l', '--classifier', help="Specify classifier output file", action='store', dest='classifier_file', default='classifier.pickle')
-    parser.add_argument('-b', '--topN_words', help="Set a limit to take the most N number of informative words", action='store', dest='topN_words', default=50,type=int)
+    parser.add_argument('-b', '--topN_words', help="Set a limit to take the most N number of informative words", action='store', dest='topN_words', default=20,type=int)
+    parser.add_argument('--length-norm', help="Feature Config: Set commentary length to boolean converter value", action='store', dest='length_norm', type=int)
+    parser.add_argument('--length-factor', help="Feature Config: Set commentary length factor value", action='store', dest='length_factor', type=int)
+    parser.add_argument('--exciting-count-factor', help="Feature Config: Set exciting word count factor value", action='store', dest='exciting_count_factor', type=int)
     args = parser.parse_args()
 
     main(args)

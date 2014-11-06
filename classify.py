@@ -36,13 +36,16 @@ def main(args):
                 continue
 
             features = classifier.feature_extractor.featureset(preprocessed_test)
-            classifier_result = classifier.classify(features)
             prob_dist = classifier.prob_classify(features)
             # print( commentary )
             # print( classifier_result )
             # print( '.....................................' )
             commentary['isHighlight'] = prob_dist.max()
             commentary['score' ] = prob_dist.prob( True )
+
+            # if features['$highlight-event$'] and not commentary['isHighlight']:
+            #     commentary['possible false result'] = { 'features': features, 'commentary': preprocessed_test }
+
             highlight_result.append( commentary )
 
         testset['commentary'] = highlight_result
