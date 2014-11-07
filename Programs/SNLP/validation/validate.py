@@ -1,4 +1,5 @@
 import json
+import argparse
 
 def get_highlight_balls_from_json(filename):
 	highlights = []
@@ -19,16 +20,23 @@ def compute_metrics(l1, l2):
 	return comp,acc,list(missed_highlights)	
 
 if __name__ == '__main__':
-	classifier_filenames = ['output58-1.json', 'output58-2.json', 'output59-1.json', 'output59-2.json']
-	manual_filenames = ['58-1.json', '58-2.json', '59-1.json', '59-2.json']
-	keys = ['58-1','58-2','59-1','59-2']
+	parser = argparse.ArgumentParser()
+	parser.add_argument('-c', '--classifier', help="Specify classifier output, format: JSON", action='store', dest='classifier_filename', default='output58-1.json')
+	parser.add_argument('-v', '--video', help="Specify manual output, format: JSON", action='store', dest='manual_filename', default='58-1.json')
+	parser.add_argument('-o', '--output', help="Specify validator output file", action='store', dest='output_file', default='validation.json')
+	args = parser.parse_args()
+
+	classifier_filename = args.classifier_filename
+	manual_filename = args.manual_filename
+	output_file = args.output_file
 	metrics = {}
-	for x in range(len(classifier_filenames)):
-		classifier_highlights = get_highlight_balls_from_json(classifier_filenames[x])
-		manual_highlights = get_highlight_balls_from_json(manual_filenames[x])
-		completeness,accuracy,missed_highlights = compute_metrics(classifier_highlights, manual_highlights)
-		# print completeness, accuracy
-		metrics[keys[x]] = [completeness, accuracy, missed_highlights]
+
+	classifier_highlights = get_highlight_balls_from_json(classifier_filename)
+	manual_highlights = get_highlight_balls_from_json(manual_filename)
+	completeness,accuracy,missed_highlights = compute_metrics(classifier_highlights, manual_highlights)
+	metrics['completeness'] = completeness
+	metrics['accuracy'] = accuracy
+	metrics['missed_highlights'] = missed_highlights
 	print metrics
-	with open('validation.json', 'wb') as fo:
+	with open(output_file, 'wb') as fo:
 		json.dump(metrics, fo)	
