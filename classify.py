@@ -43,8 +43,9 @@ def main(args):
             commentary['isHighlight'] = prob_dist.max()
             commentary['score' ] = prob_dist.prob( True )
 
-            # if features['$highlight-event$'] and not commentary['isHighlight']:
-            #     commentary['possible false result'] = { 'features': features, 'commentary': preprocessed_test }
+            if features['$highlight-event$'] and not commentary['isHighlight']:
+                commentary['false result'] = True
+            commentary['debug result'] = { 'features': features, 'commentary': preprocessed_test }
 
             highlight_result.append( commentary )
 
