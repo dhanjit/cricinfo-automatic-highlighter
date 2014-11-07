@@ -1,4 +1,21 @@
 {
+  "syntactically important tokens": {
+    "!": true
+  },
+  "important events":{
+      "six": true,
+      "four": true,
+      "out": true,
+      "dropped": true,
+      "drop": true,
+      "misfield": true,
+      "century": true,
+      "hundred": true,
+      "milestone": true,
+      "fifty": true,
+      "100" : true,
+      "50" : true
+  },
   "combinable phrases": {
     "1 run": true,
     "1 wide": true,
@@ -254,7 +271,6 @@
     "wrong foot": true,
     "wrong footed": true
   },
-
   "exciting words": {
     "abnormal": true,
     "abolish": true,
@@ -6079,5 +6095,1291 @@
     "zealous": true,
     "zealously": true,
     "zenith": true
+  },
+  "players": {
+    "aaron finch": {
+      "team": "SRH",
+      "fullname": "Aaron Finch"
+    },
+    "ab de villiers": {
+      "team": "RCB",
+      "fullname": "AB De Villiers"
+    },
+    "abd": {
+      "team": "RCB",
+      "fullname": "AB De Villiers"
+    },
+    "abdullah": {
+      "team": "RR",
+      "fullname": "Iqbal Abdullah"
+    },
+    "abhishek nayar": {
+      "team": "RR",
+      "fullname": "Abhishek Nayar"
+    },
+    "abu nechim ahmed": {
+      "team": "RCB",
+      "fullname": "Abu Nechim Ahmed"
+    },
+    "aditya tare": {
+      "team": "MI",
+      "fullname": "Aditya Tare"
+    },
+    "agarwal": {
+      "team": "DD",
+      "fullname": "Mayank Agarwal"
+    },
+    "ajinkya rahane": {
+      "team": "RR",
+      "fullname": "Ajinkya Rahane"
+    },
+    "akshar patel": {
+      "team": "Kings XI",
+      "fullname": "Akshar Patel"
+    },
+    "albie": {
+      "team": "RCB",
+      "fullname": "Albie Morkel"
+    },
+    "albie morkel": {
+      "team": "RCB",
+      "fullname": "Albie Morkel"
+    },
+    "ambati rayudu": {
+      "team": "MI",
+      "fullname": "Ambati Rayudu"
+    },
+    "amit mishra": {
+      "team": "SRH",
+      "fullname": "Amit Mishra"
+    },
+    "amit paunikar": {
+      "team": "SRH",
+      "fullname": "Amit Paunikar"
+    },
+    "anderson": {
+      "team": "MI",
+      "fullname": "Corey Anderson"
+    },
+    "andre russell": {
+      "team": "KKR",
+      "fullname": "Andre Russell"
+    },
+    "anirudha": {
+      "team": "SRH",
+      "fullname": "Srikkanth Anirudha"
+    },
+    "ankit nagendra sharma": {
+      "team": "RR",
+      "fullname": "Ankit Nagendra Sharma"
+    },
+    "ankush bains": {
+      "team": "RR",
+      "fullname": "Ankush Bains"
+    },
+    "anureet singh": {
+      "team": "Kings XI",
+      "fullname": "Anureet Singh"
+    },
+    "apoorv vijay wankhade": {
+      "team": "MI",
+      "fullname": "Apoorv Vijay Wankhade"
+    },
+    "ashish nehra": {
+      "team": "CSK",
+      "fullname": "Ashish Nehra"
+    },
+    "ashish reddy": {
+      "team": "SRH",
+      "fullname": "Ashish Reddy"
+    },
+    "ashok dinda": {
+      "team": "RCB",
+      "fullname": "Ashok Dinda"
+    },
+    "ashwin": {
+      "team": "CSK",
+      "fullname": "Ravichandran Ashwin"
+    },
+    "awana": {
+      "team": "Kings XI",
+      "fullname": "Parvinder Awana"
+    },
+    "baba aparajith": {
+      "team": "CSK",
+      "fullname": "Baba Aparajith"
+    },
+    "badree": {
+      "team": "CSK",
+      "fullname": "Samuel Badree"
+    },
+    "bailey": {
+      "team": "Kings XI",
+      "fullname": "George Bailey"
+    },
+    "bains": {
+      "team": "RR",
+      "fullname": "Ankush Bains"
+    },
+    "balaji": {
+      "team": "Kings XI",
+      "fullname": "Lakshmipathy Balaji"
+    },
+    "ben cutting": {
+      "team": "RR",
+      "fullname": "Ben Cutting"
+    },
+    "ben dunk": {
+      "team": "MI",
+      "fullname": "Ben Dunk"
+    },
+    "ben hilfenhaus": {
+      "team": "CSK",
+      "fullname": "Ben Hilfenhaus"
+    },
+    "beuran hendricks": {
+      "team": "Kings XI",
+      "fullname": "Beuran Hendricks"
+    },
+    "bhatia": {
+      "team": "RR",
+      "fullname": "Rajat Bhatia"
+    },
+    "bhuvi": {
+      "team": "SRH",
+      "fullname": "Bhuvneshwar Kumar"
+    },
+    "bhuvneshwar kumar": {
+      "team": "SRH",
+      "fullname": "Bhuvneshwar Kumar"
+    },
+    "binny": {
+      "team": "RR",
+      "fullname": "Stuart Binny"
+    },
+    "bisla": {
+      "team": "KKR",
+      "fullname": "Manvinder Bisla"
+    },
+    "brad hodge": {
+      "team": "RR",
+      "fullname": "Brad Hodge"
+    },
+    "bravo": {
+      "team": "CSK",
+      "fullname": "Dwayne Bravo"
+    },
+    "brendan prasanth parameswaran": {
+      "team": "SRH",
+      "fullname": "Brendan Prasanth Parameswaran"
+    },
+    "brendon mccullum": {
+      "team": "CSK",
+      "fullname": "Brendon McCullum"
+    },
+    "bumrah": {
+      "team": "MI",
+      "fullname": "Jasprit Bumrah"
+    },
+    "c.m. gautam": {
+      "team": "MI",
+      "fullname": "C.M. Gautam"
+    },
+    "chahal": {
+      "team": "RCB",
+      "fullname": "Yuzvendra Singh Chahal"
+    },
+    "chama milind": {
+      "team": "SRH",
+      "fullname": "Chama Milind"
+    },
+    "chand": {
+      "team": "RR",
+      "fullname": "Unmukt Chand"
+    },
+    "chawla": {
+      "team": "KKR",
+      "fullname": "Piyush Chawla"
+    },
+    "cheteshwar pujara": {
+      "team": "Kings XI",
+      "fullname": "Cheteshwar Pujara"
+    },
+    "chris gayle": {
+      "team": "RCB",
+      "fullname": "Chris Gayle"
+    },
+    "chris lynn": {
+      "team": "KKR",
+      "fullname": "Chris Lynn"
+    },
+    "cooper": {
+      "team": "RR",
+      "fullname": "Kevon Cooper"
+    },
+    "corey anderson": {
+      "team": "MI",
+      "fullname": "Corey Anderson"
+    },
+    "coulter-nile": {
+      "team": "DD",
+      "fullname": "Nathan Coulter-Nile"
+    },
+    "cummins": {
+      "team": "KKR",
+      "fullname": "Patrick Cummins"
+    },
+    "cutting": {
+      "team": "RR",
+      "fullname": "Ben Cutting"
+    },
+    "dale steyn": {
+      "team": "SRH",
+      "fullname": "Dale Steyn"
+    },
+    "darren sammy": {
+      "team": "SRH",
+      "fullname": "Darren Sammy"
+    },
+    "das": {
+      "team": "KKR",
+      "fullname": "Debabrata Das"
+    },
+    "david miller": {
+      "team": "Kings XI",
+      "fullname": "David Miller"
+    },
+    "david warner": {
+      "team": "SRH",
+      "fullname": "David Warner"
+    },
+    "de kock": {
+      "team": "DD",
+      "fullname": "Quinton De Kock"
+    },
+    "de villiers": {
+      "team": "RCB",
+      "fullname": "AB De Villiers"
+    },
+    "debabrata das": {
+      "team": "KKR",
+      "fullname": "Debabrata Das"
+    },
+    "deepak hooda": {
+      "team": "RR",
+      "fullname": "Deepak Hooda"
+    },
+    "dhawal kulkarni": {
+      "team": "RR",
+      "fullname": "Dhawal Kulkarni"
+    },
+    "dhawan": {
+      "team": "Kings XI",
+      "fullname": "Rishi Dhawan"
+    },
+    "dhoni": {
+      "team": "CSK",
+      "fullname": "MS Dhoni"
+    },
+    "dinda": {
+      "team": "RCB",
+      "fullname": "Ashok Dinda"
+    },
+    "dinesh karthik": {
+      "team": "DD",
+      "fullname": "Dinesh Karthik"
+    },
+    "dishant yagnik": {
+      "team": "RR",
+      "fullname": "Dishant Yagnik"
+    },
+    "doeschate": {
+      "team": "KKR",
+      "fullname": "Ryan Ten Doeschate"
+    },
+    "du plesis": {
+      "team": "CSK",
+      "fullname": "Faf Du Plessis"
+    },
+    "duminy": {
+      "team": "DD",
+      "fullname": "Jean-Paul Duminy"
+    },
+    "dunk": {
+      "team": "MI",
+      "fullname": "Ben Dunk"
+    },
+    "dwayne bravo": {
+      "team": "CSK",
+      "fullname": "Dwayne Bravo"
+    },
+    "dwayne smith": {
+      "team": "CSK",
+      "fullname": "Dwayne Smith"
+    },
+    "faf": {
+      "team": "CSK",
+      "fullname": "Faf Du Plessis"
+    },
+    "faf du plessis": {
+      "team": "CSK",
+      "fullname": "Faf Du Plessis"
+    },
+    "faulkner": {
+      "team": "RR",
+      "fullname": "James Faulkner"
+    },
+    "finch": {
+      "team": "SRH",
+      "fullname": "Aaron Finch"
+    },
+    "gambhir": {
+      "team": "KKR",
+      "fullname": "Gautam Gambhir"
+    },
+    "gautam": {
+      "team": "KKR",
+      "fullname": "Gautam Gambhir"
+    },
+    "gautam gambhir": {
+      "team": "KKR",
+      "fullname": "Gautam Gambhir"
+    },
+    "gauti": {
+      "team": "KKR",
+      "fullname": "Gautam Gambhir"
+    },
+    "gayle": {
+      "team": "RCB",
+      "fullname": "Chris Gayle"
+    },
+    "george bailey": {
+      "team": "Kings XI",
+      "fullname": "George Bailey"
+    },
+    "glenn": {
+      "team": "Kings XI",
+      "fullname": "Glenn Maxwell"
+    },
+    "glenn maxwell": {
+      "team": "Kings XI",
+      "fullname": "Glenn Maxwell"
+    },
+    "gurkirat singh mann": {
+      "team": "Kings XI",
+      "fullname": "Gurkirat Singh Mann"
+    },
+    "harbhajan singh": {
+      "team": "MI",
+      "fullname": "Harbhajan Singh"
+    },
+    "harshal patel": {
+      "team": "RCB",
+      "fullname": "Harshal Patel"
+    },
+    "hasan": {
+      "team": "KKR",
+      "fullname": "Shakib Al Hasan"
+    },
+    "hastings": {
+      "team": "CSK",
+      "fullname": "John Hastings"
+    },
+    "hendricks": {
+      "team": "Kings XI",
+      "fullname": "Beuran Hendricks"
+    },
+    "henriques": {
+      "team": "SRH",
+      "fullname": "Moises Henriques"
+    },
+    "hilfenhaus": {
+      "team": "CSK",
+      "fullname": "Ben Hilfenhaus"
+    },
+    "hodge": {
+      "team": "RR",
+      "fullname": "Brad Hodge"
+    },
+    "holder": {
+      "team": "SRH",
+      "fullname": "Jason Holder"
+    },
+    "hooda": {
+      "team": "RR",
+      "fullname": "Deepak Hooda"
+    },
+    "hs sharath": {
+      "team": "DD",
+      "fullname": "HS Sharath"
+    },
+    "hussey": {
+      "team": "MI",
+      "fullname": "Michael Hussey"
+    },
+    "iqbal": {
+      "team": "RR",
+      "fullname": "Iqbal Abdullah"
+    },
+    "iqbal abdullah": {
+      "team": "RR",
+      "fullname": "Iqbal Abdullah"
+    },
+    "irfan pathan": {
+      "team": "SRH",
+      "fullname": "Irfan Pathan"
+    },
+    "ishant sharma": {
+      "team": "SRH",
+      "fullname": "Ishant Sharma"
+    },
+    "ishwar chandra pandey": {
+      "team": "CSK",
+      "fullname": "Ishwar Chandra Pandey"
+    },
+    "jacques kallis": {
+      "team": "KKR",
+      "fullname": "Jacques Kallis"
+    },
+    "jadeja": {
+      "team": "CSK",
+      "fullname": "Ravindra Jadeja"
+    },
+    "jadhav": {
+      "team": "DD",
+      "fullname": "Kedar Jadhav"
+    },
+    "jakati": {
+      "team": "RCB",
+      "fullname": "Shadab Jakati"
+    },
+    "jalaj saxena": {
+      "team": "MI",
+      "fullname": "Jalaj Saxena"
+    },
+    "james faulkner": {
+      "team": "RR",
+      "fullname": "James Faulkner"
+    },
+    "james neesham": {
+      "team": "DD",
+      "fullname": "James Neesham"
+    },
+    "jason holder": {
+      "team": "SRH",
+      "fullname": "Jason Holder"
+    },
+    "jasprit bumrah": {
+      "team": "MI",
+      "fullname": "Jasprit Bumrah"
+    },
+    "jayant yadav": {
+      "team": "DD",
+      "fullname": "Jayant Yadav"
+    },
+    "jaydev unadkat": {
+      "team": "DD",
+      "fullname": "Jaydev Unadkat"
+    },
+    "jean-paul duminy": {
+      "team": "DD",
+      "fullname": "Jean-Paul Duminy"
+    },
+    "john hastings": {
+      "team": "CSK",
+      "fullname": "John Hastings"
+    },
+    "johnson": {
+      "team": "Kings XI",
+      "fullname": "Mitchell Johnson"
+    },
+    "josh hazlewood": {
+      "team": "MI",
+      "fullname": "Josh Hazlewood"
+    },
+    "juneja": {
+      "team": "SRH",
+      "fullname": "Manprit Juneja"
+    },
+    "kallis": {
+      "team": "KKR",
+      "fullname": "Jacques Kallis"
+    },
+    "kane richardson": {
+      "team": "RR",
+      "fullname": "Kane Richardson"
+    },
+    "karanveer singh": {
+      "team": "Kings XI",
+      "fullname": "Karanveer Singh"
+    },
+    "karn sharma": {
+      "team": "SRH",
+      "fullname": "Karn Sharma"
+    },
+    "karthik": {
+      "team": "DD",
+      "fullname": "Dinesh Karthik"
+    },
+    "kartik": {
+      "team": "DD",
+      "fullname": "Dinesh Karthik"
+    },
+    "karun nair": {
+      "team": "RR",
+      "fullname": "Karun Nair"
+    },
+    "kaul": {
+      "team": "DD",
+      "fullname": "Siddarth Kaul"
+    },
+    "kedar jadhav": {
+      "team": "DD",
+      "fullname": "Kedar Jadhav"
+    },
+    "kevin pietersen": {
+      "team": "DD",
+      "fullname": "Kevin Pietersen"
+    },
+    "kevon cooper": {
+      "team": "RR",
+      "fullname": "Kevon Cooper"
+    },
+    "khan": {
+      "team": "MI",
+      "fullname": "Zaheer Khan"
+    },
+    "kieron pollard": {
+      "team": "MI",
+      "fullname": "Kieron Pollard"
+    },
+    "kl rahul": {
+      "team": "SRH",
+      "fullname": "KL Rahul"
+    },
+    "kohli": {
+      "team": "RCB",
+      "fullname": "Virat Kohli"
+    },
+    "krismar santokie": {
+      "team": "MI",
+      "fullname": "Krismar Santokie"
+    },
+    "kuldeep singh yadav": {
+      "team": "KKR",
+      "fullname": "Kuldeep Singh Yadav"
+    },
+    "kulkarni": {
+      "team": "RR",
+      "fullname": "Dhawal Kulkarni"
+    },
+    "kumar": {
+      "team": "KKR",
+      "fullname": "Vinay Kumar"
+    },
+    "lakshmipathy balaji": {
+      "team": "Kings XI",
+      "fullname": "Lakshmipathy Balaji"
+    },
+    "lasith malinga": {
+      "team": "MI",
+      "fullname": "Lasith Malinga"
+    },
+    "laxmi ratan shukla": {
+      "team": "DD",
+      "fullname": "Laxmi Ratan Shukla"
+    },
+    "lynn": {
+      "team": "KKR",
+      "fullname": "Chris Lynn"
+    },
+    "maddinson": {
+      "team": "RCB",
+      "fullname": "Nic Maddinson"
+    },
+    "malik": {
+      "team": "RR",
+      "fullname": "Vikramjeet Malik"
+    },
+    "malinga": {
+      "team": "MI",
+      "fullname": "Lasith Malinga"
+    },
+    "manan vohra": {
+      "team": "Kings XI",
+      "fullname": "Manan Vohra"
+    },
+    "mandeep hardev singh": {
+      "team": "Kings XI",
+      "fullname": "Mandeep Hardev Singh"
+    },
+    "manhas": {
+      "team": "CSK",
+      "fullname": "Mithun Manhas"
+    },
+    "manish pandey": {
+      "team": "KKR",
+      "fullname": "Manish Pandey"
+    },
+    "mann": {
+      "team": "Kings XI",
+      "fullname": "Gurkirat Singh Mann"
+    },
+    "manoj tiwary": {
+      "team": "DD",
+      "fullname": "Manoj Tiwary"
+    },
+    "manprit juneja": {
+      "team": "SRH",
+      "fullname": "Manprit Juneja"
+    },
+    "manvinder bisla": {
+      "team": "KKR",
+      "fullname": "Manvinder Bisla"
+    },
+    "marchant de lange": {
+      "team": "MI",
+      "fullname": "Marchant De Lange"
+    },
+    "marsh": {
+      "team": "Kings XI",
+      "fullname": "Shaun Marsh"
+    },
+    "matt henry": {
+      "team": "CSK",
+      "fullname": "Matt Henry"
+    },
+    "maxi": {
+      "team": "Kings XI",
+      "fullname": "Glenn Maxwell"
+    },
+    "maxwell": {
+      "team": "Kings XI",
+      "fullname": "Glenn Maxwell"
+    },
+    "mayank agarwal": {
+      "team": "DD",
+      "fullname": "Mayank Agarwal"
+    },
+    "mccullum": {
+      "team": "CSK",
+      "fullname": "Brendon McCullum"
+    },
+    "michael hussey": {
+      "team": "MI",
+      "fullname": "Michael Hussey"
+    },
+    "milind kumar": {
+      "team": "DD",
+      "fullname": "Milind Kumar"
+    },
+    "miller": {
+      "team": "Kings XI",
+      "fullname": "David Miller"
+    },
+    "mishra": {
+      "team": "SRH",
+      "fullname": "Amit Mishra"
+    },
+    "mitchell johnson": {
+      "team": "Kings XI",
+      "fullname": "Mitchell Johnson"
+    },
+    "mitchell starc": {
+      "team": "RCB",
+      "fullname": "Mitchell Starc"
+    },
+    "mithun manhas": {
+      "team": "CSK",
+      "fullname": "Mithun Manhas"
+    },
+    "mohammad shami": {
+      "team": "DD",
+      "fullname": "Mohammad Shami"
+    },
+    "mohit sharma": {
+      "team": "CSK",
+      "fullname": "Mohit Sharma"
+    },
+    "moises henriques": {
+      "team": "SRH",
+      "fullname": "Moises Henriques"
+    },
+    "morkel": {
+      "team": "KKR",
+      "fullname": "Morne Morkel"
+    },
+    "morne morkel": {
+      "team": "KKR",
+      "fullname": "Morne Morkel"
+    },
+    "ms": {
+      "team": "CSK",
+      "fullname": "MS Dhoni"
+    },
+    "ms dhoni": {
+      "team": "CSK",
+      "fullname": "MS Dhoni"
+    },
+    "msd": {
+      "team": "CSK",
+      "fullname": "MS Dhoni"
+    },
+    "murali": {
+      "team": "RCB",
+      "fullname": "Muttiah Muralitharan"
+    },
+    "murali kartik": {
+      "team": "Kings XI",
+      "fullname": "Murali Kartik"
+    },
+    "murali vijay": {
+      "team": "DD",
+      "fullname": "Murali Vijay"
+    },
+    "muralitharan": {
+      "team": "RCB",
+      "fullname": "Muttiah Muralitharan"
+    },
+    "muttiah muralitharan": {
+      "team": "RCB",
+      "fullname": "Muttiah Muralitharan"
+    },
+    "nadeem": {
+      "team": "DD",
+      "fullname": "Shahbaz Nadeem"
+    },
+    "nair": {
+      "team": "RR",
+      "fullname": "Karun Nair"
+    },
+    "naman ojha": {
+      "team": "SRH",
+      "fullname": "Naman Ojha"
+    },
+    "narine": {
+      "team": "KKR",
+      "fullname": "Sunil Narine"
+    },
+    "nathan coulter-nile": {
+      "team": "DD",
+      "fullname": "Nathan Coulter-Nile"
+    },
+    "nayar": {
+      "team": "RR",
+      "fullname": "Abhishek Nayar"
+    },
+    "neesham": {
+      "team": "DD",
+      "fullname": "James Neesham"
+    },
+    "negi": {
+      "team": "RR",
+      "fullname": "Pawan Negi"
+    },
+    "nehra": {
+      "team": "CSK",
+      "fullname": "Ashish Nehra"
+    },
+    "nic maddinson": {
+      "team": "RCB",
+      "fullname": "Nic Maddinson"
+    },
+    "ojha": {
+      "team": "MI",
+      "fullname": "Pragyan Ojha"
+    },
+    "pandey": {
+      "team": "KKR",
+      "fullname": "Manish Pandey"
+    },
+    "parnell": {
+      "team": "DD",
+      "fullname": "Wayne Parnell"
+    },
+    "parthiv patel": {
+      "team": "RCB",
+      "fullname": "Parthiv Patel"
+    },
+    "parveez rasool": {
+      "team": "SRH",
+      "fullname": "Parveez Rasool"
+    },
+    "parvinder awana": {
+      "team": "Kings XI",
+      "fullname": "Parvinder Awana"
+    },
+    "patel": {
+      "team": "Kings XI",
+      "fullname": "Akshar Patel"
+    },
+    "pathan": {
+      "team": "KKR",
+      "fullname": "Yusuf Pathan"
+    },
+    "patrick cummins": {
+      "team": "KKR",
+      "fullname": "Patrick Cummins"
+    },
+    "pawan negi": {
+      "team": "RR",
+      "fullname": "Pawan Negi"
+    },
+    "pawan suyal": {
+      "team": "MI",
+      "fullname": "Pawan Suyal"
+    },
+    "perera": {
+      "team": "Kings XI",
+      "fullname": "Thisara Perera"
+    },
+    "pietersen": {
+      "team": "DD",
+      "fullname": "Kevin Pietersen"
+    },
+    "piyush chawla": {
+      "team": "KKR",
+      "fullname": "Piyush Chawla"
+    },
+    "pollard": {
+      "team": "MI",
+      "fullname": "Kieron Pollard"
+    },
+    "pragyan ojha": {
+      "team": "MI",
+      "fullname": "Pragyan Ojha"
+    },
+    "pravin tambe": {
+      "team": "RR",
+      "fullname": "Pravin Tambe"
+    },
+    "pujara": {
+      "team": "Kings XI",
+      "fullname": "Cheteshwar Pujara"
+    },
+    "quinton de kock": {
+      "team": "DD",
+      "fullname": "Quinton De Kock"
+    },
+    "rahane": {
+      "team": "RR",
+      "fullname": "Ajinkya Rahane"
+    },
+    "rahul": {
+      "team": "DD",
+      "fullname": "Rahul Sharma"
+    },
+    "rahul sharma": {
+      "team": "DD",
+      "fullname": "Rahul Sharma"
+    },
+    "rahul shukla": {
+      "team": "DD",
+      "fullname": "Rahul Shukla"
+    },
+    "rahul tewatia": {
+      "team": "RR",
+      "fullname": "Rahul Tewatia"
+    },
+    "raina": {
+      "team": "CSK",
+      "fullname": "Suresh Raina"
+    },
+    "rajat bhatia": {
+      "team": "RR",
+      "fullname": "Rajat Bhatia"
+    },
+    "rampaul": {
+      "team": "RCB",
+      "fullname": "Ravi Rampaul"
+    },
+    "rana": {
+      "team": "RCB",
+      "fullname": "Sachin Rana"
+    },
+    "rao": {
+      "team": "SRH",
+      "fullname": "Venugopal Rao"
+    },
+    "rasool": {
+      "team": "SRH",
+      "fullname": "Parveez Rasool"
+    },
+    "ravi rampaul": {
+      "team": "RCB",
+      "fullname": "Ravi Rampaul"
+    },
+    "ravichandran ashwin": {
+      "team": "CSK",
+      "fullname": "Ravichandran Ashwin"
+    },
+    "ravindra jadeja": {
+      "team": "CSK",
+      "fullname": "Ravindra Jadeja"
+    },
+    "rayudu": {
+      "team": "MI",
+      "fullname": "Ambati Rayudu"
+    },
+    "reddy": {
+      "team": "SRH",
+      "fullname": "Ashish Reddy"
+    },
+    "richardson": {
+      "team": "RR",
+      "fullname": "Kane Richardson"
+    },
+    "ricky bhui": {
+      "team": "SRH",
+      "fullname": "Ricky Bhui"
+    },
+    "rishi dhawan": {
+      "team": "Kings XI",
+      "fullname": "Rishi Dhawan"
+    },
+    "robin uthappa": {
+      "team": "KKR",
+      "fullname": "Robin Uthappa"
+    },
+    "rohit sharma": {
+      "team": "MI",
+      "fullname": "Rohit Sharma"
+    },
+    "ronit more": {
+      "team": "CSK",
+      "fullname": "Ronit More"
+    },
+    "ross taylor": {
+      "team": "DD",
+      "fullname": "Ross Taylor"
+    },
+    "russell": {
+      "team": "KKR",
+      "fullname": "Andre Russell"
+    },
+    "ryan ten doeschate": {
+      "team": "KKR",
+      "fullname": "Ryan Ten Doeschate"
+    },
+    "sachin rana": {
+      "team": "RCB",
+      "fullname": "Sachin Rana"
+    },
+    "saha": {
+      "team": "Kings XI",
+      "fullname": "Wriddhiman Saha"
+    },
+    "sammy": {
+      "team": "SRH",
+      "fullname": "Darren Sammy"
+    },
+    "samson": {
+      "team": "RR",
+      "fullname": "Sanju Samson"
+    },
+    "samuel badree": {
+      "team": "CSK",
+      "fullname": "Samuel Badree"
+    },
+    "sandeep sharma": {
+      "team": "Kings XI",
+      "fullname": "Sandeep Sharma"
+    },
+    "sandeep warrier": {
+      "team": "RCB",
+      "fullname": "Sandeep Warrier"
+    },
+    "sanju samson": {
+      "team": "RR",
+      "fullname": "Sanju Samson"
+    },
+    "santoike": {
+      "team": "MI",
+      "fullname": "Krismar Santokie"
+    },
+    "saurabh tiwary": {
+      "team": "DD",
+      "fullname": "Saurabh Tiwary"
+    },
+    "sayan sekhar mandal": {
+      "team": "KKR",
+      "fullname": "Sayan Sekhar Mandal"
+    },
+    "sehwag": {
+      "team": "Kings XI",
+      "fullname": "Virender Sehwag"
+    },
+    "shadab jakati": {
+      "team": "RCB",
+      "fullname": "Shadab Jakati"
+    },
+    "shahbaz nadeem": {
+      "team": "DD",
+      "fullname": "Shahbaz Nadeem"
+    },
+    "shakib": {
+      "team": "KKR",
+      "fullname": "Shakib Al Hasan"
+    },
+    "shakib al hasan": {
+      "team": "KKR",
+      "fullname": "Shakib Al Hasan"
+    },
+    "shami": {
+      "team": "DD",
+      "fullname": "Mohammad Shami"
+    },
+    "shane watson": {
+      "team": "RR",
+      "fullname": "Shane Watson"
+    },
+    "shardul narendra thakur": {
+      "team": "Kings XI",
+      "fullname": "Shardul Narendra Thakur"
+    },
+    "sharma": {
+      "team": "DD",
+      "fullname": "Rahul Sharma"
+    },
+    "shaun marsh": {
+      "team": "Kings XI",
+      "fullname": "Shaun Marsh"
+    },
+    "shikhar dhawan": {
+      "team": "SRH",
+      "fullname": "Shikhar Dhawan"
+    },
+    "shivam sharma": {
+      "team": "Kings XI",
+      "fullname": "Shivam Sharma"
+    },
+    "shreyas gopal": {
+      "team": "MI",
+      "fullname": "Shreyas Gopal"
+    },
+    "shukla": {
+      "team": "DD",
+      "fullname": "Rahul Shukla"
+    },
+    "siddarth kaul": {
+      "team": "DD",
+      "fullname": "Siddarth Kaul"
+    },
+    "singh": {
+      "team": "KKR",
+      "fullname": "Veer Pratap Singh"
+    },
+    "slinga": {
+      "team": "MI",
+      "fullname": "Lasith Malinga"
+    },
+    "smith": {
+      "team": "RR",
+      "fullname": "Steven Smith"
+    },
+    "southee": {
+      "team": "RR",
+      "fullname": "Tim Southee"
+    },
+    "srikkanth": {
+      "team": "SRH",
+      "fullname": "Srikkanth Anirudha"
+    },
+    "srikkanth anirudha": {
+      "team": "SRH",
+      "fullname": "Srikkanth Anirudha"
+    },
+    "starc": {
+      "team": "RCB",
+      "fullname": "Mitchell Starc"
+    },
+    "steven smith": {
+      "team": "RR",
+      "fullname": "Steven Smith"
+    },
+    "steyn": {
+      "team": "SRH",
+      "fullname": "Dale Steyn"
+    },
+    "stuart binny": {
+      "team": "RR",
+      "fullname": "Stuart Binny"
+    },
+    "sunil narine": {
+      "team": "KKR",
+      "fullname": "Sunil Narine"
+    },
+    "suresh raina": {
+      "team": "CSK",
+      "fullname": "Suresh Raina"
+    },
+    "suryakumar yadav": {
+      "team": "KKR",
+      "fullname": "Suryakumar Yadav"
+    },
+    "sushant marathe": {
+      "team": "MI",
+      "fullname": "Sushant Marathe"
+    },
+    "takawale": {
+      "team": "RCB",
+      "fullname": "Yogesh Takawale"
+    },
+    "tambe": {
+      "team": "RR",
+      "fullname": "Pravin Tambe"
+    },
+    "tanmay mishra": {
+      "team": "RCB",
+      "fullname": "Tanmay Mishra"
+    },
+    "tare": {
+      "team": "MI",
+      "fullname": "Aditya Tare"
+    },
+    "taylor": {
+      "team": "DD",
+      "fullname": "Ross Taylor"
+    },
+    "tewatia": {
+      "team": "RR",
+      "fullname": "Rahul Tewatia"
+    },
+    "thisara perera": {
+      "team": "Kings XI",
+      "fullname": "Thisara Perera"
+    },
+    "tim southee": {
+      "team": "RR",
+      "fullname": "Tim Southee"
+    },
+    "tiwary": {
+      "team": "DD",
+      "fullname": "Saurabh Tiwary"
+    },
+    "umesh yadav": {
+      "team": "KKR",
+      "fullname": "Umesh Yadav"
+    },
+    "unadkat": {
+      "team": "DD",
+      "fullname": "Jaydev Unadkat"
+    },
+    "unmukt chand": {
+      "team": "RR",
+      "fullname": "Unmukt Chand"
+    },
+    "uthappa": {
+      "team": "KKR",
+      "fullname": "Robin Uthappa"
+    },
+    "veer pratap singh": {
+      "team": "KKR",
+      "fullname": "Veer Pratap Singh"
+    },
+    "venugopal rao": {
+      "team": "SRH",
+      "fullname": "Venugopal Rao"
+    },
+    "vijay": {
+      "team": "DD",
+      "fullname": "Murali Vijay"
+    },
+    "vijay shankar": {
+      "team": "CSK",
+      "fullname": "Vijay Shankar"
+    },
+    "vijay zol": {
+      "team": "RCB",
+      "fullname": "Vijay Zol"
+    },
+    "vikramjeet malik": {
+      "team": "RR",
+      "fullname": "Vikramjeet Malik"
+    },
+    "vinay kumar": {
+      "team": "KKR",
+      "fullname": "Vinay Kumar"
+    },
+    "virat": {
+      "team": "RCB",
+      "fullname": "Virat Kohli"
+    },
+    "virat kohli": {
+      "team": "RCB",
+      "fullname": "Virat Kohli"
+    },
+    "virender sehwag": {
+      "team": "Kings XI",
+      "fullname": "Virender Sehwag"
+    },
+    "vohra": {
+      "team": "Kings XI",
+      "fullname": "Manan Vohra"
+    },
+    "warner": {
+      "team": "SRH",
+      "fullname": "David Warner"
+    },
+    "warrier": {
+      "team": "RCB",
+      "fullname": "Sandeep Warrier"
+    },
+    "watson": {
+      "team": "RR",
+      "fullname": "Shane Watson"
+    },
+    "wayne parnell": {
+      "team": "DD",
+      "fullname": "Wayne Parnell"
+    },
+    "wriddhiman saha": {
+      "team": "Kings XI",
+      "fullname": "Wriddhiman Saha"
+    },
+    "yadav": {
+      "team": "KKR",
+      "fullname": "Suryakumar Yadav"
+    },
+    "yagnik": {
+      "team": "RR",
+      "fullname": "Dishant Yagnik"
+    },
+    "yogesh takawale": {
+      "team": "RCB",
+      "fullname": "Yogesh Takawale"
+    },
+    "yusuf pathan": {
+      "team": "KKR",
+      "fullname": "Yusuf Pathan"
+    },
+    "yuvi": {
+      "team": "RCB",
+      "fullname": "Yuvraj Singh"
+    },
+    "yuvraj": {
+      "team": "RCB",
+      "fullname": "Yuvraj Singh"
+    },
+    "yuvraj singh": {
+      "team": "RCB",
+      "fullname": "Yuvraj Singh"
+    },
+    "yuzvendra singh chahal": {
+      "team": "RCB",
+      "fullname": "Yuzvendra Singh Chahal"
+    },
+    "zaheer": {
+      "team": "MI",
+      "fullname": "Zaheer Khan"
+    },
+    "zaheer khan": {
+      "team": "MI",
+      "fullname": "Zaheer Khan"
+    },
+    "zol": {
+      "team": "RCB",
+      "fullname": "Vijay Zol"
+    }
   }
 }

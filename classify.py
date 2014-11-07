@@ -22,34 +22,7 @@ def main(args):
 
     result = []
     for testset in test_data:
-        highlight_result = []
-        #print(testset)
-        if (args.outputfile != '-'):
-            informative_features = classifier.show_most_informative_features(n=1000)
-            print( informative_features )
-
-        for commentary in testset['commentary']:
-            preprocessed_test = process_commentary(commentary, custom_info, 'test')
-            if not preprocessed_test:
-                #print(commentary)
-                #print(preprocessed_test)
-                continue
-
-            features = classifier.feature_extractor.featureset(preprocessed_test)
-            prob_dist = classifier.prob_classify(features)
-            # print( commentary )
-            # print( classifier_result )
-            # print( '.....................................' )
-            commentary['isHighlight'] = prob_dist.max()
-            commentary['score' ] = prob_dist.prob( True )
-
-            if features['$highlight-event$'] and not commentary['isHighlight']:
-                commentary['false result'] = True
-            commentary['debug result'] = { 'features': features, 'commentary': preprocessed_test }
-
-            highlight_result.append( commentary )
-
-        testset['commentary'] = highlight_result
+        testset['commmentary'] = classify_list( classifier, testset['commentary'], custom_info, args.verbose )
         result.append(testset)
 
     if (args.outputfile == '-'):
@@ -59,12 +32,48 @@ def main(args):
     json.dump(testset,outfile)
     outfile.close()
 
+def classify_list(classifier, commentary_list, custom_info, verbose_mode):
+    highlight_result = []
+    firstball_found = False
+    lastball_found = True
+    lastball = commentary_list[-1]['ball']
+
+    for commentary in commentary_list:
+        processed_result = process_commentary(commentary, custom_info, 'test')
+
+        if not processed_result:
+            continue
+
+        features = classifier.feature_extractor.featureset(commentary)
+        prob_dist = classifier.prob_classify(features)
+
+        commentary['isHighlight'] = prob_dist.max()
+        commentary['score' ] = prob_dist.prob( True )
+
+        if not firstball_found and commentary['ball'] == 0.1 :
+            firstball_found = True
+            commentary['isHighlight'] = True
+
+        if not lastball_found and commentary['ball'] == lastball :
+            lastball_found = True
+            commentary['isHighlight'] = True
+
+        if verbose_mode:
+            # if features['$highlight-event$'] and not commentary['isHighlight']:
+            #     commentary['false result'] = True
+            commentary['features'] = features
+
+        highlight_result.append( commentary )
+
+    return highlight_result
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-l', '--classifier', help="Specify trained classifier", action='store',dest='classifier', default='classifier.pickle')
     parser.add_argument('-t', '--test', help="Specify test file. Use '-' to read from stdin", action='store',dest='testfile', default='data/testset.json')
     parser.add_argument('-o', '--output', help="Specify output file. Use '-' to print to stdout", action='store',default='output.json',dest='outputfile')
     parser.add_argument('-c', '--custom', help="Specify custom information file", action='store', dest='custominfofile', default='data/custom_information.json')
+    parser.add_argument('-v', '--verbose', help="Specify if verbose output required, will add feature info to each commentary in json output", action='store_true', dest='verbose', default=False )
 
     args = parser.parse_args()
     main(args)

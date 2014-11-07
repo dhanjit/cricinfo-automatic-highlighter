@@ -36,26 +36,17 @@ def process_commentary(commentary, custom_info, method):
             return word
     # print(words)
     filtered_words = [ word.lower() for word in words if strip_markers(word).lower() not in nltk.corpus.stopwords.words('english') ]
+    filtered_words = [ word for word in filtered_words if word not in custom_info['players'] ]
     #print('\t'+str(filtered_words))
     if all( word[:2] == '$$' or word[-2:] == '$$' for word in filtered_words ):
         return False
     #print(filtered_words)
 
+    commentary[ 'processed_text' ] = filtered_words
     if method == 'train':
-        return (filtered_words, commentary['isHighlight'])
+        return ( commentary , commentary['isHighlight'])
     else:
-        return filtered_words
-
-    # commentary['ball'] = BeautifulSoup(commentary['formattedball']).p.text.replace('\n',' ').strip()
-    # soup = BeautifulSoup(commentary['formattedtext'])
-    # commentary['rawtext'] = soup.p.text.replace('\n',' ').strip()
-    # commentary['wordlist'] = [ word.lower() for word in commentary['rawtext'].split() if word not in stopwords('english') ]
-    # if method == 'train':
-    #     taggedset.append( (commentary['wordlist'],commentary['isHighlight']) )
-    # elif method == 'test':
-    #     taggedset.append( (commentary['wordlist'],commentary['isHighlight']) )
-    # commentary['boldphrases'] = soup.p.find_all(True,recursive=False) # bold font/commsImportant. do something later
-    # return commentary
+        return commentary
 
 class FeatureExtractor:
 
@@ -70,37 +61,36 @@ class FeatureExtractor:
 
     # Return the feature set of the commentary
     def featureset(self, commentary):
-        words = set(commentary)
+        words = set(commentary['processed_text'])
         features = {}
-        custom_event_words = { 'six': [ '$$six$$' ], 'four': [ '$$four$$' ], 'out': [ '$$out$$' ], 'drop':[ '$$drop$$', '$$dropped$$' ] }
+
         features[ '$exciting$'] = False
+
         features[ '$exciting-count$' ] = 0
-        features[ '$important$' ] = False
-        features[ '$longlength$' ] = ( len(commentary) / self.length_factor > self.length_norm )
 
-        # print( commentary )
-        for exciting_word in self.custom_info['exciting words']:
-            if exciting_word in words:
+        features[ '$important-event$' ] = False
+
+        features[ '$longlength$' ] = ( len(commentary['processed_text']) / self.length_factor > self.length_norm )
+
+        features[ '$syntactically-important$' ] = False
+
+        for word in words:
+
+            if word in self.custom_info['exciting words']:
                 features[ '$exciting$' ] = True
-                # print( 'found ' + exciting_word )
                 features[ '$exciting-count$' ] += 1
-                words.remove(exciting_word)
 
-        features[ '$exciting-count$' ] = int( features[ '$exciting-count$' ] / self.exciting_count_factor )
+            if word in self.custom_info['important events']:
+                features[ '$important-event$' ] = True
 
-        if '!' in words:
-            features[ '$exclamation$' ] = True
-            words.remove('!')
-        else:
-            features[ '$exclamation$' ] = False
+            if word in self.custom_info['syntactically important tokens']:
+                features[ '$syntactically-important$' ] = True
 
-        # print( features  )
-        # print( '.................................' )
-        features[ '$highlight-event$' ] = any( word[:2] == word[-2:] == '$$' for word in words )
-        words = set( word for word in words if not (word[:2] == word[-2:] =='$$') )
+        features[ '$exciting-count$' ] = round( features[ '$exciting-count$' ] / self.exciting_count_factor )
 
         for word in self.wordset['best_words']:
             features['contains(%s)' % word ] = ( word in words )
+
         return features
 
 # subclass nltk's Naive Bayes Classifier, so that we can

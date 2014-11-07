@@ -18,6 +18,12 @@ def main(args):
 
     classifier = learn_trainingset(training_data, custom_info, args.topN_words, feature_config)
 
+    #if (args.outputfile != '-'):
+    print( '---------------------------------------------------')
+    informative_features = classifier.show_most_informative_features(n=1000)
+    print( informative_features )
+    print( '---------------------------------------------------')
+
     with open(args.classifier_file, 'wb') as f:
         pickle.dump(classifier, f)
 
@@ -31,9 +37,11 @@ def learn_trainingset(training_data, custom_info, topN_words, feature_config):
                 continue
             tagged_commentaries.append(processed_commentary)
 
-    wordset = getwordset( tagged_commentaries, topN_words )
+    ignore_words = dict( custom_info['exciting words'].items() | custom_info['important events'].items() | custom_info['syntactically important tokens'].items() )
 
-    feature_extractor = FeatureExtractor(custom_info, wordset, feature_config )
+    wordset = getwordset( tagged_commentaries, topN_words, ignore_words )
+
+    feature_extractor = FeatureExtractor( custom_info, wordset, feature_config )
 
     training_set = nltk.classify.apply_features(feature_extractor.featureset, tagged_commentaries)
 
@@ -48,16 +56,17 @@ def learn_trainingset(training_data, custom_info, topN_words, feature_config):
 
     return classifier
 
-def getwordset(tagged_commentaries, topN_words):
+def getwordset(tagged_commentaries, topN_words, ignore_words):
     allwords = set()
     allwords_fd = nltk.probability.FreqDist()
     allwords_tagged_fd = nltk.probability.ConditionalFreqDist()
 
     for tagged_commmentary in tagged_commentaries:
-        for word in tagged_commmentary[0]:
-            allwords.add(word)
-            allwords_fd[word] += 1
-            allwords_tagged_fd[tagged_commmentary[1]][word] += 1
+        for word in tagged_commmentary[0]['processed_text']:
+            if word not in ignore_words :
+                allwords.add(word)
+                allwords_fd[word] += 1
+                allwords_tagged_fd[tagged_commmentary[1]][word] += 1
 
     pos_word_count = allwords_tagged_fd[True].N()
     neg_word_count = allwords_tagged_fd[False].N()
