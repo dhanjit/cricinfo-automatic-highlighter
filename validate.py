@@ -14,10 +14,10 @@ def compute_metrics(l1, l2):
 	s1 = set(l1)
 	s2 = set(l2)
 	a = len( s1.intersection(s2) )
-	missed_highlights = s1 - s1.intersection(s2) 
+	missed_highlights = s1 - s1.intersection(s2)
 	comp = float(a)/len( s2 )
 	acc = float(a)/len( s1 )
-	return comp,acc,list(missed_highlights)	
+	return comp,acc,list(missed_highlights)
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
@@ -37,6 +37,6 @@ if __name__ == '__main__':
 	metrics['completeness'] = completeness
 	metrics['accuracy'] = accuracy
 	metrics['missed_highlights'] = missed_highlights
-	print metrics
+#	print metrics
 	with open(output_file, 'wb') as fo:
-		json.dump(metrics, fo)	
+		json.dump(metrics, fo)
