@@ -91,6 +91,8 @@ def classify_list(classifier, commentary_list, custom_info, min_score, verbose_m
             # if features['$highlight-event$'] and not commentary['isHighlight']:
             #     commentary['false result'] = True
             commentary['features'] = features
+        else:
+            commentary.pop('processed_text', None)
 
         commentary['index'] = index
         index += 1
