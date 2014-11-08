@@ -1,22 +1,4 @@
 {
-  "syntactically important tokens": {
-    "!": true
-  },
-  "important events":{
-      "six": true,
-      "four": true,
-      "out": true,
-      "dropped": true,
-      "drop": true,
-      "misfield": true,
-      "century": true,
-      "hundred": true,
-      "milestone": true,
-      "appeal": true,
-      "fifty": true,
-      "100" : true,
-      "50" : true
-  },
   "combinable phrases": {
     "1 run": true,
     "1 wide": true,
@@ -261,6 +243,7 @@
     "twelfth man": true,
     "unplayable delivery": true,
     "upper cut": true,
+    "very close": true,
     "wagon wheel": true,
     "walking in": true,
     "walking wicket": true,
@@ -877,6 +860,8 @@
     "cleverly": true,
     "clogged": true,
     "clogs": true,
+    "close": true,
+    "closely": true,
     "clueless": true,
     "clumsy": true,
     "clunky": true,
@@ -898,9 +883,9 @@
     "combust": true,
     "comely": true,
     "comfort": true,
-    "comforted": true,
     "comfortable": true,
     "comfortably": true,
+    "comforted": true,
     "comforting": true,
     "comical": true,
     "commend": true,
@@ -1959,10 +1944,10 @@
     "errant": true,
     "erratic": true,
     "erratically": true,
+    "erred": true,
     "erroneous": true,
     "erroneously": true,
     "error": true,
-    "erred": true,
     "errors": true,
     "erudite": true,
     "eruptions": true,
@@ -2061,8 +2046,8 @@
     "expired": true,
     "explode": true,
     "exploit": true,
-    "exploited": true,
     "exploitation": true,
+    "exploited": true,
     "explosive": true,
     "expropriate": true,
     "expropriation": true,
@@ -2359,8 +2344,8 @@
     "fulminate": true,
     "fumble": true,
     "fumbled": true,
-    "fumes": true,
     "fumed": true,
+    "fumes": true,
     "fundamentalism": true,
     "funky": true,
     "funnily": true,
@@ -2613,8 +2598,8 @@
     "headaches": true,
     "headway": true,
     "healthful": true,
-    "healthy": true,
     "healthily": true,
+    "healthy": true,
     "heartbreaker": true,
     "heartbreaking": true,
     "heartbreakingly": true,
@@ -4904,8 +4889,8 @@
     "skulk": true,
     "slack": true,
     "slam": true,
-    "slamming": true,
     "slammed": true,
+    "slamming": true,
     "slander": true,
     "slanderer": true,
     "slanderous": true,
@@ -5911,6 +5896,7 @@
     "veritable": true,
     "versatile": true,
     "versatility": true,
+    "veryclose": true,
     "vestiges": true,
     "vexation": true,
     "vexing": true,
@@ -6096,6 +6082,21 @@
     "zealous": true,
     "zealously": true,
     "zenith": true
+  },
+  "important events": {
+    "50": true,
+    "100": true,
+    "six": true,
+    "four": true,
+    "out": true,
+    "dropped": true,
+    "drop": true,
+    "misfield": true,
+    "century": true,
+    "hundred": true,
+    "milestone": true,
+    "appeal": true,
+    "fifty": true
   },
   "players": {
     "aaron finch": {
@@ -7382,5 +7383,8 @@
       "team": "RCB",
       "fullname": "Vijay Zol"
     }
+  },
+  "syntactically important tokens": {
+    "!": true
   }
 }
