@@ -1,0 +1,973 @@
+{
+  "commentary": [
+    {
+      "ball": 0,
+      "isHighlight": false,
+      "text": "Here come Dwayne Smith and Faf du Plessis. Huge ask ahead of them. It will be Smith to face the first ball, and Mitchell Johnson to bowl it"
+    },
+    {
+      "ball": 0.1,
+      "isHighlight": false,
+      "text": "Johnson to Smith,1 run,just back of a length, gives Smith a bit of width, and he's slashed it, a touch uppishly, towards Sandeep Sharma at third man"
+    },
+    {
+      "ball": 0.2,
+      "isHighlight": true,
+      "text": "Johnson to du Plessis, $$OUT$$ ,gone first ball! Johnson dug that in, and Faf tried to pull from shoulder-height, outside off, and ends up spooning it way up in the air. George Bailey, at mid-on, waits an age before it drops into his hands"
+    },
+    {
+      "ball": 0.2,
+      "isHighlight": false,
+      "text": "$$F$$ $$du$$ $$Plessis$$ $$c$$ $$Bailey$$ $$b$$ $$Johnson$$ $$0$$ $$(1m$$ $$1b$$ $$0x4$$ $$0x6)$$ $$SR:$$ $$0.00$$"
+    },
+    {
+      "ball": 0.3,
+      "isHighlight": false,
+      "text": "Johnson to Smith,1 run,back-foot push to mid-on"
+    },
+    {
+      "ball": 0.4,
+      "isHighlight": false,
+      "text": "Johnson to Raina, $$FOUR$$ ,digs it in again, targeting Raina with the short ball, but it's angled down leg, and he gets a tickle on it, trying to work it off his rib-cage on the hop"
+    },
+    {
+      "ball": 0.5,
+      "isHighlight": false,
+      "text": "Johnson to Raina,1 run,looks to pull from outside off, and it goes off the toe-end of his bat towards mid-on"
+    },
+    {
+      "ball": 0.6,
+      "isHighlight": false,
+      "text": "Johnson to Smith,2 runs,length ball, on the pads, and Smith plays that late, turns his wrists to work it to deep square leg"
+    },
+    {
+      "ball": 0.6,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to bowl now"
+    },
+    {
+      "ball": 1.1,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Raina, $$FOUR$$ ,a length ball to start is launched over mid-off for four, Raina had to reach across for that one, connects well"
+    },
+    {
+      "ball": 1.1,
+      "isHighlight": false,
+      "text": "chilu: \"Sehwag carnage at chepauk... 274 on the first day... unforgettable first time stadium experience it was...\""
+    },
+    {
+      "ball": 1.2,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Raina, $$FOUR$$ ,cracked past mid-off for four, a short of length ball and that is hit sweetly in the air past mid-off for four"
+    },
+    {
+      "ball": 1.2,
+      "isHighlight": false,
+      "text": "Dhoni: \"If MI can chase 190 in 14.4 overs at the same ground, why can't Chennai chase 226 in 20 overs. Ezzy peezy!!!\""
+    },
+    {
+      "ball": 1.3,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Raina,no run,he has packed the off-side field and has sent mid-off deep but bowls this one into the pads, Sandeep escapes though as Raina doesn't connect and is struck on the pad"
+    },
+    {
+      "ball": 1.4,
+      "isHighlight": true,
+      "text": "Sandeep Sharma to Raina, $$SIX$$ ,Raina is wasting no time here, the most consistent batsman in the IPL hammers this one over midwicket, into the second tier"
+    },
+    {
+      "ball": 1.5,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Raina, $$FOUR$$ ,Sandeep being taken apart here, Raina moves away from leg stump to make room, crunches this past a diving point for four"
+    },
+    {
+      "ball": 1.5,
+      "isHighlight": false,
+      "text": "Arjun: \"Can IPL legend Raina bail out CSK again??\""
+    },
+    {
+      "ball": 1.6,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Raina,no run,short ball on middle and leg, slugged to midwicket, straight at the fielder"
+    },
+    {
+      "ball": 1.6,
+      "isHighlight": false,
+      "text": "Ankur Chaturved: \"Two fav Sehwag innings... 40 ball 50 odd v Aus in 2001 which started his hitting prowess... & 69 Ball 100 v NZ in Colombo in 2001 which launched Sehwag the opener\""
+    },
+    {
+      "ball": 1.6,
+      "isHighlight": false,
+      "text": "Saleel: \"I still remember an ESPNcricinfo headline after Sehwag's wicket, which goes to show how you remember his aura from back in the day; it read - \"Sanity restored after Sehwag wicket\" ... loved it.\""
+    },
+    {
+      "ball": 2.1,
+      "isHighlight": false,
+      "text": "Awana to Smith,no run,Parvinder Awana starts with a tidy delivery on off stump, Smith defends this one"
+    },
+    {
+      "ball": 2.2,
+      "isHighlight": false,
+      "text": "Awana to Smith,no run,short of length and just outside off, smith looks for his usual swat towards square leg, no contact"
+    },
+    {
+      "ball": 2.3,
+      "isHighlight": false,
+      "text": "Awana to Smith,1 leg bye,on the pads, squeezed towards square leg"
+    },
+    {
+      "ball": 2.4,
+      "isHighlight": false,
+      "text": "Awana to Raina, $$FOUR$$ ,Raina on the rampage, a short ball on the leg stump, pulls that away behind square leg for four"
+    },
+    {
+      "ball": 2.5,
+      "isHighlight": false,
+      "text": "Awana to Raina, $$FOUR$$ ,length ball, Raina skips down the track and clobbers that over extra cover for four more, moving away from leg to make room, \"CSK, CSK,\" the crowd yells, Raina 31 off 10 now"
+    },
+    {
+      "ball": 2.6,
+      "isHighlight": false,
+      "text": "Awana to Raina,no run,a yorker outside off, squeezed towards backward point"
+    },
+    {
+      "ball": 2.6,
+      "isHighlight": false,
+      "text": "Rahul: \"The man who declined a single at 199 to farm the strike, protecting the tail-ender. Awesomeness personified! \""
+    },
+    {
+      "ball": 2.6,
+      "isHighlight": false,
+      "text": "SD: \"Since we are talking favourite Sehwag innings, mine is the 293 he scored against Sri Lanka at the Brabourne Stadium in 2009. He basically scored 284* in 79 overs (239 balls I think) in a day. He might well have beaten Bradman's record of 309 in a day had he gotten to bat 90 overs. That was sublime hitting. \""
+    },
+    {
+      "ball": 3.1,
+      "isHighlight": false,
+      "text": "Johnson to Smith,2 runs,well outside off, Smith pummels that one through the covers, a diving Akshar Patel gets a hand on that to prevent a sure boundary"
+    },
+    {
+      "ball": 3.1,
+      "isHighlight": false,
+      "text": "Johnson round the wicket"
+    },
+    {
+      "ball": 3.2,
+      "isHighlight": false,
+      "text": "Johnson to Smith,1 run,angling in towards middle and leg, tucked towards midwicket for a single"
+    },
+    {
+      "ball": 3.3,
+      "isHighlight": false,
+      "text": "Johnson to Raina, $$FOUR$$ ,length ball is swatted towards deep midwicket for four more, Raina hitting everything"
+    },
+    {
+      "ball": 3.3,
+      "isHighlight": false,
+      "text": "Kapil Patel: \"The longer Raina stays, doubt will ponder over this statement - \"Sehwag: I had to win at least one game for Kings XI Punjab\".\""
+    },
+    {
+      "ball": 3.4,
+      "isHighlight": true,
+      "text": "Johnson to Raina, $$SIX$$ ,smashed for six, pitched up and that is clubbed over mid-on for a big six, cracking shot that, Suresh Raina is now 41 off 13"
+    },
+    {
+      "ball": 3.4,
+      "isHighlight": false,
+      "text": "Kavin: \"Here is my favorite of Sehwag's play in 2004 - 250 odd runs to chase in final innings against Australia at Chepauk. Sehwag was going great guns against McGrath at Chepauk. Still remember the fierce walk he marched towards McGrath. Rain stopped the next day unfortunately. \""
+    },
+    {
+      "ball": 3.5,
+      "isHighlight": false,
+      "text": "Johnson to Raina,no run,slower one outside off, Raina was moving away from the stumps, looks to chop that behind point, beaten"
+    },
+    {
+      "ball": 3.6,
+      "isHighlight": false,
+      "text": "Johnson to Raina,1 wide,short and down the leg side, that's a wide, and it brings up CSK's 50, the batsmen punch gloves"
+    },
+    {
+      "ball": 3.6,
+      "isHighlight": false,
+      "text": "Nitin: \"Write off chennai at your own risk...\""
+    },
+    {
+      "ball": 3.6,
+      "isHighlight": true,
+      "text": "Johnson to Raina, $$SIX$$ ,six more! Raina is on fire, he doesn't care that the bowler is Mitchell Johnson, who drops it a bit short, Raina pummels that behind square leg for six, he's now 46!"
+    },
+    {
+      "ball": 4.1,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Smith,1 wide,Sandeep starts the over with a wide down the leg side"
+    },
+    {
+      "ball": 4.1,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Smith,1 leg bye,follows the batsman, Smith was backing away, off the thigh pad for a leg-bye"
+    },
+    {
+      "ball": 4.1,
+      "isHighlight": false,
+      "text": "Shouvik: \"\"Raina is taking apart the world's fastest bowler\" Words I never thought I would write.\""
+    },
+    {
+      "ball": 4.2,
+      "isHighlight": true,
+      "text": "Sandeep Sharma to Raina, $$SIX$$ ,sensational batting from Raina, he's pumped up, this is the second quickest fifty in the IPL, this was a length ball, Raina gets forward and doesn't look to power the ball, he manages to get that over cover for an effortless six"
+    },
+    {
+      "ball": 4.3,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Raina,1 run,angling in from round the wicket, Raina bottom-edges it as he slugs the ball towards midwicket"
+    },
+    {
+      "ball": 4.4,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Smith,1 leg bye,nips in after pitching around off, that was sliding down the leg side though"
+    },
+    {
+      "ball": 4.5,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Raina,1 run,there's what Sandeep does best, gets the ball to swing, too good for Smith, moves in after pitching back of a length, moves too much for Smith to get middle as he looks to drive, sneaks between bat and pad and is bowled"
+    },
+    {
+      "ball": 4.5,
+      "isHighlight": false,
+      "text": "KARTHIK: \"I would be the happiest person in this world if Raina plays an innings close to this for India.\""
+    },
+    {
+      "ball": 4.6,
+      "isHighlight": true,
+      "text": "Sandeep Sharma to Smith, $$OUT$$"
+    },
+    {
+      "ball": 4.6,
+      "isHighlight": false,
+      "text": "$$DR$$ $$Smith$$ $$b$$ $$Sandeep$$ $$Sharma$$ $$7$$ $$(26m$$ $$11b$$ $$0x4$$ $$0x6)$$ $$SR:$$ $$63.63$$"
+    },
+    {
+      "ball": 5.1,
+      "isHighlight": false,
+      "text": "Awana to Raina, $$SIX$$ ,six more, everything Raina touches clears the ropes, this one is not even off the middle of the bat, high on the blade but there still enough to send that clear of the midwicket boundary"
+    },
+    {
+      "ball": 5.2,
+      "isHighlight": true,
+      "text": "Awana to Raina, $$SIX$$ ,shot! Raina's innings has been peppered with some jaw-dropping hit, this is another of them, a length ball is cleanly struck over long-on, holds the pose after playing the shot, effortless and full of style"
+    },
+    {
+      "ball": 5.3,
+      "isHighlight": false,
+      "text": "Awana to Raina, $$FOUR$$ ,OMG! incredible from Raina, and I am soon going to run out of synonyms, this was a full ball angling away outside off, Raina flicks that towards midwicket, I thought it would be a single, instead he has found the gap and that has gone away for four"
+    },
+    {
+      "ball": 5.4,
+      "isHighlight": false,
+      "text": "Awana to Raina, $$FOUR$$ ,four again, 6 6 4 4 so far in this over, pitched up and outside off, carted towards deep square leg for four more"
+    },
+    {
+      "ball": 5.5,
+      "isHighlight": false,
+      "text": "Awana to Raina,(no ball)  $$FOUR$$ ,another boundary, I think I should just keep that in my copy-paste, high full toss outside off, Raina just helps it towards third man for four, and that is a no-ball as well"
+    },
+    {
+      "ball": 5.5,
+      "isHighlight": false,
+      "text": "25 off four balls in this over"
+    },
+    {
+      "ball": 5.5,
+      "isHighlight": false,
+      "text": "Awana to Raina, $$FOUR$$ ,make that 29 off five now, Raina launches this length ball over mid-on for four more, incredible stuff this, Dhoni calm as ever in the dressing room"
+    },
+    {
+      "ball": 5.6,
+      "isHighlight": true,
+      "text": "Awana to Raina, $$FOUR$$ ,100 in six overs! I am out of words! Raina finishes this over off with another boundary, this time towards deep square leg, this over has had 6 6 4 4 4nb 4 4, 33 off the over, at this rate Sehwag's son might be teased some more at his school"
+    },
+    {
+      "ball": 5.6,
+      "isHighlight": false,
+      "text": "$$Time-out$$"
+    },
+    {
+      "ball": 5.6,
+      "isHighlight": false,
+      "text": "Clearly CSK thinking this has to be chased in 14.4 - they are on course for it!"
+    },
+    {
+      "ball": 5.6,
+      "isHighlight": false,
+      "text": "A batsman on 87* after the Powerplay! The previous highest by a TEAM in the Powerplay was 86. I think our stats guys are going to have a long night after this game."
+    },
+    {
+      "ball": 5.6,
+      "isHighlight": false,
+      "text": "Karnaveer Singh - big ask off the youngster"
+    },
+    {
+      "ball": 6.1,
+      "isHighlight": true,
+      "text": "Karanveer Singh to McCullum, $$OUT$$ ,a run-out first ball, Raina's masterclass is over, McCullum defends the ball towards cover and sets off for a single, there is hesitation between the batsmen before they decide to go for the single, George Bailey has a pinpoint throw from cover, catches Raina short to end what has been the best innings of the IPL! Bailey is jubilant as are the rest of Kings XI, Bailey is mobbed, Raina is distraught"
+    },
+    {
+      "ball": 6.1,
+      "isHighlight": false,
+      "text": "$$SK$$ $$Raina$$ $$run$$ $$out$$ $$87$$ $$(37m$$ $$25b$$ $$12x4$$ $$6x6)$$ $$SR:$$ $$348.00$$"
+    },
+    {
+      "ball": 6.2,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja,1 run,the new man iis Jadeja, who drives that towards long-on for a single"
+    },
+    {
+      "ball": 6.3,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,1 run,cuts that towards point for one more"
+    },
+    {
+      "ball": 6.4,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja,1 run,another single down the ground"
+    },
+    {
+      "ball": 6.5,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,no run,superb from Maxwell at extra cover, a diving stop to prevent a sure boundary"
+    },
+    {
+      "ball": 6.6,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,no run,just three off the over, 30 less than the previous one"
+    },
+    {
+      "ball": 7.1,
+      "isHighlight": false,
+      "text": "Maxwell to Jadeja,no run,flighted delivery and well outside off, left alone"
+    },
+    {
+      "ball": 7.2,
+      "isHighlight": false,
+      "text": "Maxwell to Jadeja,no run"
+    },
+    {
+      "ball": 7.3,
+      "isHighlight": false,
+      "text": "Maxwell to Jadeja,1 run,pushed towards sweeper cover for a single"
+    },
+    {
+      "ball": 7.4,
+      "isHighlight": false,
+      "text": "Maxwell to McCullum,1 run,looked to power this through the off side, top edges this towards deep backward point"
+    },
+    {
+      "ball": 7.5,
+      "isHighlight": false,
+      "text": "Maxwell to Jadeja,2 runs,squeezed behind square leg, race back for the second"
+    },
+    {
+      "ball": 7.6,
+      "isHighlight": false,
+      "text": "Maxwell to Jadeja,no run,full and just outside off, pushed back towards the bowler"
+    },
+    {
+      "ball": 7.6,
+      "isHighlight": false,
+      "text": "Prakash Viswa: \"Sanity restored after Raina's dismissal\" Going up as our headline."
+    },
+    {
+      "ball": 8.1,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,1 run,a touch short and spinning away, slapped towards deep point for a single"
+    },
+    {
+      "ball": 8.2,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja, $$FOUR$$ ,poor ball that, spinning down the leg side, helped along to the fine-leg boundary"
+    },
+    {
+      "ball": 8.3,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja,1 run,full and wide, drilled towards long-off for a single"
+    },
+    {
+      "ball": 8.4,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,1 run,slides on, McCullum thinks that will turn away, doesn't have the room for the cut, gets the ball away though, a diving stop by Bailey"
+    },
+    {
+      "ball": 8.5,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja,1 run,skips down and thumps that back towards the bowler, harsh judges might call that a drop, but there was no hit with too much power, bowler sticks out his right hand to stop that"
+    },
+    {
+      "ball": 8.6,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,2 runs,slugged over mid-on for two more, McCullum has to rush back as the throw comes in to the keeper's end, and what a throw that was, right over the bails, Jadeja has to gesture toi McCullum asking him to rush back"
+    },
+    {
+      "ball": 9.1,
+      "isHighlight": false,
+      "text": "Patel to Jadeja,no run,Jadeja thumps it towards cover"
+    },
+    {
+      "ball": 9.2,
+      "isHighlight": false,
+      "text": "Patel to Jadeja,1 run,tossed up, tucked away to the leg side for a single"
+    },
+    {
+      "ball": 9.3,
+      "isHighlight": false,
+      "text": "Patel to McCullum,1 run,clipped behind square for a single"
+    },
+    {
+      "ball": 9.4,
+      "isHighlight": false,
+      "text": "Patel to Jadeja,1 wide,quick and down the leg side, 106.7kph from Patel"
+    },
+    {
+      "ball": 9.4,
+      "isHighlight": false,
+      "text": "Patel to Jadeja,1 run,flat-batted towards long-on for a single"
+    },
+    {
+      "ball": 9.5,
+      "isHighlight": false,
+      "text": "Patel to McCullum,no run,tosses this one up, McCullum blocks it"
+    },
+    {
+      "ball": 9.6,
+      "isHighlight": false,
+      "text": "Patel to McCullum,1 leg bye,looks to sweep this one, off the pads and towards point for a leg-bye, no lbw appeal as that was going down the leg side"
+    },
+    {
+      "ball": 10.1,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,1 run,gives this plenty of air, McCullum sweeps this towards deep square leg for a single"
+    },
+    {
+      "ball": 10.2,
+      "isHighlight": true,
+      "text": "Karanveer Singh to Jadeja, $$SIX$$ ,full toss outside off, should be put away, Jadeja puts it away, skips down the track and carts that over the bowler for six"
+    },
+    {
+      "ball": 10.3,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja,no run,sees Jadeja charging down, and fires it way outside off, Jadeja gets bat on it after reaching out, can only push it to cover, he had to play it as he would have been stumped otherwise"
+    },
+    {
+      "ball": 10.4,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja, $$FOUR$$ ,skips down and hammers this down the ground, the fielder at long-on tries valiantly but he can't stop this one despite the dive"
+    },
+    {
+      "ball": 10.5,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Jadeja,1 run,pushed towards long-on for a single"
+    },
+    {
+      "ball": 10.6,
+      "isHighlight": false,
+      "text": "Karanveer Singh to McCullum,no run,spinning away outside off, McCullum looking to sweep though that was well outside off, and the ball is turning away, the sweep perhaps not the best option, McCullum doesn't connect"
+    },
+    {
+      "ball": 11.1,
+      "isHighlight": false,
+      "text": "Patel to Jadeja,1 run,overpitched outside off, Jadeja clubs that towards long-off, powerful hit but not placed well, Miller can stop that"
+    },
+    {
+      "ball": 11.2,
+      "isHighlight": false,
+      "text": "Patel to McCullum,1 run,on the pads, nudged away for a single"
+    },
+    {
+      "ball": 11.3,
+      "isHighlight": false,
+      "text": "Patel to Jadeja,1 run,short of length ball on off stump, pushed towards long-on for a single"
+    },
+    {
+      "ball": 11.4,
+      "isHighlight": false,
+      "text": "Patel to McCullum,1 run,shortish and angling in towards the pads, McCullum backs away and guides this to backward point for a single"
+    },
+    {
+      "ball": 11.4,
+      "isHighlight": false,
+      "text": "Sandeep: \"Delaying my experiment in the lab, haven't had lunch, just watching #KXIPvsCSK. Feeling guilty? Guilt my foot! What a match this is!\""
+    },
+    {
+      "ball": 11.5,
+      "isHighlight": false,
+      "text": "Patel to Jadeja,1 run,pitched up, muscled towards long-on for a single"
+    },
+    {
+      "ball": 11.6,
+      "isHighlight": true,
+      "text": "Patel to McCullum,1 run,  $$OUT$$ ,is that another run-out? Yes, it is, McCullum pushed that towards sweeper cover, was an easy single, a misfield by Maxwell prompts them to go for the second, Maxwell fires in the throw to the keeper, not quite on top of the stumps, couple of yards wide, Saha is superb though, collects the ball and flings down the stumps, McCullum dives but he caught short"
+    },
+    {
+      "ball": 11.6,
+      "isHighlight": false,
+      "text": "$$BB$$ $$McCullum$$ $$run$$ $$out$$ $$11$$ $$(30m$$ $$16b$$ $$0x4$$ $$0x6)$$ $$SR:$$ $$68.75$$"
+    },
+    {
+      "ball": 12.1,
+      "isHighlight": true,
+      "text": "Awana to Jadeja, $$OUT$$ ,and another one, Chennai Super Kings losing their way here, Jadeja wanted to hammer this ball towards long-off, top edges it and it is a low chance for Mitchell Johnson at third man, Johnson does well to scoop that one, Priety Zinta is over the moon"
+    },
+    {
+      "ball": 12.1,
+      "isHighlight": false,
+      "text": "$$RA$$ $$Jadeja$$ $$c$$ $$Johnson$$ $$b$$ $$Awana$$ $$27$$ $$(19m$$ $$21b$$ $$2x4$$ $$1x6)$$ $$SR:$$ $$128.57$$"
+    },
+    {
+      "ball": 12.1,
+      "isHighlight": false,
+      "text": "Still, the men in the middle are MS Dhoni and David Hussey. Game on."
+    },
+    {
+      "ball": 12.1,
+      "isHighlight": false,
+      "text": "Akil: \"Bailey for MoM this game has turned since that run-out\""
+    },
+    {
+      "ball": 12.1,
+      "isHighlight": false,
+      "text": "Jay: \"Did McCullum's innings remind anyone else about Yuvraj's innings in the World T20 Final or is it just me?\""
+    },
+    {
+      "ball": 12.2,
+      "isHighlight": false,
+      "text": "Awana to Hussey,no run,short of length ball on middle stump, guided towards backward point"
+    },
+    {
+      "ball": 12.2,
+      "isHighlight": false,
+      "text": "Rudrasinh jadej: \"So after much distraction of Raina innings, my favorite Sehwag knock is 1st match of 2013 World Cup opening match against Bangladesh\" Ok, we are done with this discussion now!"
+    },
+    {
+      "ball": 12.3,
+      "isHighlight": false,
+      "text": "Awana to Hussey,1 run,just a touch wider, again steered to backward point"
+    },
+    {
+      "ball": 12.4,
+      "isHighlight": false,
+      "text": "Awana to Dhoni,1 run,length ball on middle and leg, clipped to square leg for one more"
+    },
+    {
+      "ball": 12.4,
+      "isHighlight": false,
+      "text": "Saleel: \"Dhoni + Wankhede + Pressure Match = KXIP, dont be too confident too soon #2011\""
+    },
+    {
+      "ball": 12.5,
+      "isHighlight": true,
+      "text": "Awana to Hussey, $$OUT$$ ,and another one, Awana returns from his 33-run over by taking two wickets in his next, short of length ball, Hussey slugs it straight to midwicket, soft dismissal, all down to Dhoni now"
+    },
+    {
+      "ball": 12.5,
+      "isHighlight": false,
+      "text": "$$DJ$$ $$Hussey$$ $$c$$ $$Sehwag$$ $$b$$ $$Awana$$ $$1$$ $$(6m$$ $$3b$$ $$0x4$$ $$0x6)$$ $$SR:$$ $$33.33$$"
+    },
+    {
+      "ball": 12.5,
+      "isHighlight": false,
+      "text": "Karandeep Nagpa: \"The good part is MSD won't need to make special efforts to take the RRR above 10\""
+    },
+    {
+      "ball": 12.6,
+      "isHighlight": false,
+      "text": "Awana to Ashwin,1 run,length ball is eased towards mid-on for a single"
+    },
+    {
+      "ball": 13.1,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Ashwin,1 run,short ball moving away outside off, Ashwin guides that towards deep backward point for a single"
+    },
+    {
+      "ball": 13.1,
+      "isHighlight": false,
+      "text": "Udit: \"This is Litmus test for Dhoni now!!! Can the cooler finisher in the world cricket do it for CSK??\""
+    },
+    {
+      "ball": 13.2,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Dhoni,1 run,short of length ball, defended by Dhoni towards midwicket, Dhoni had taken a couple of paces down the track before playing the shot, so he can pinch a single"
+    },
+    {
+      "ball": 13.3,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Ashwin,no run,looking to hammer it to the leg side, inside-edge it instead"
+    },
+    {
+      "ball": 13.4,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Ashwin,1 run,length ball is played uppishly towards mid-on, the man is in the deep though, and a single results"
+    },
+    {
+      "ball": 13.5,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Dhoni,1 run,slapped towards point for one more"
+    },
+    {
+      "ball": 13.5,
+      "isHighlight": false,
+      "text": "Our stats editor S Rajesh tweets: S Rajesh @rajeshstatsCSK's overseas players in this innings: 19 runs, 31 balls, 4 dismissals."
+    },
+    {
+      "ball": 13.6,
+      "isHighlight": false,
+      "text": "Sandeep Sharma to Ashwin,1 run,guides this down to third man for one more"
+    },
+    {
+      "ball": 13.6,
+      "isHighlight": false,
+      "text": "And this is from our social media editor Nitin Sundar: @knittinsMust-win game against CSK with MSD at the crease. How relieved are Punjab that they don't have Irfan Pathan in the XI."
+    },
+    {
+      "ball": 13.6,
+      "isHighlight": false,
+      "text": "$$Timeout$$"
+    },
+    {
+      "ball": 13.6,
+      "isHighlight": false,
+      "text": "dasi: \"Can we atleast see Maxwell bowls to Ashwin?\" That will be fun, and with the pitch taking turn, perhaps he might get an over."
+    },
+    {
+      "ball": 13.6,
+      "isHighlight": false,
+      "text": "Ishan Jain: \"Raina's innings today is no doubt the best any Indian has played in any season of IPL. But there is one thing about this guy, whenever he bats for CSK, they never loose momentum/grip on the game. Not just today, I really cant think of an instance where his timing has gone off while wearing this yellow jersey.\""
+    },
+    {
+      "ball": 14.1,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Ashwin,1 run,length ball spinning away well outside off, lashed towards sweeper cover for a single"
+    },
+    {
+      "ball": 14.2,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Dhoni,no run,Dhoni steps out of the crease, a flighted ball outside off, Dhoni misses, and with quicksilver reflexes he makes sure he gets his bat behind the crease"
+    },
+    {
+      "ball": 14.3,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Dhoni,1 wide,too wide outside off"
+    },
+    {
+      "ball": 14.3,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Dhoni,1 run,loopy delivery outside off, inviting Dhoni to go for the big hits, Dhoni slaps this to point for a single"
+    },
+    {
+      "ball": 14.4,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Ashwin,2 runs,spinning a long way outside off, slapped past a diving point for two"
+    },
+    {
+      "ball": 14.5,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Ashwin,1 run,quicker and fired into the pads, helped towards fine leg for a single"
+    },
+    {
+      "ball": 14.6,
+      "isHighlight": false,
+      "text": "Karanveer Singh to Dhoni,1 run,back to flighting the ball, bravely giving it lots of air here, full ball is driven towards long-off for asingle"
+    },
+    {
+      "ball": 15.1,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,no run,length ball outside off, Dhoni slogs and misses, not often Dhoni misses once he decides to go for a big hit"
+    },
+    {
+      "ball": 15.2,
+      "isHighlight": true,
+      "text": "Johnson to Dhoni, $$SIX$$ ,whoah! how did that go for six? Dhoni power that's how, short ball from Johnson is forehanded over mid-off, thought it will land well short of the rope but that keeps on going, incredible hit"
+    },
+    {
+      "ball": 15.3,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,no run,bouncer on leg stump, Dhoni can't get bat on it, checks with the umpire whether that is a wide, it isn't"
+    },
+    {
+      "ball": 15.4,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,1 run,short of length and angling away, slower one as well, 124kph, slapped towards cover"
+    },
+    {
+      "ball": 15.4,
+      "isHighlight": false,
+      "text": "Dinesh: \"Conspiracy theory time: McCullum having just became a father, realized how much it would have pained Sehwag if Raina won the match for CSK and thus caused the continued teasing of Sehwag's son. Hence he got Raina and himself run out to help out a fellow dad.\""
+    },
+    {
+      "ball": 15.5,
+      "isHighlight": false,
+      "text": "Johnson to Ashwin,1 run,on the pads, tucked away towards deep square leg"
+    },
+    {
+      "ball": 15.6,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,1 run,full ball on off stump, eased towards long-on for a single"
+    },
+    {
+      "ball": 15.6,
+      "isHighlight": false,
+      "text": "Christian: \"Anyone for another classic Dhoni's last over heroics?\""
+    },
+    {
+      "ball": 16.1,
+      "isHighlight": false,
+      "text": "Patel to Dhoni,no run,on the pads, Dhoni looks to whip that away but is struck on the pads"
+    },
+    {
+      "ball": 16.2,
+      "isHighlight": false,
+      "text": "Patel to Dhoni,1 run,punched towards long-off for a single"
+    },
+    {
+      "ball": 16.3,
+      "isHighlight": false,
+      "text": "Patel to Ashwin,1 run,a leading edge as Ashwin looks to work the ball to the leg side, the ball loops over the bowler"
+    },
+    {
+      "ball": 16.4,
+      "isHighlight": false,
+      "text": "Patel to Dhoni,1 run,Dhoni wants two after working the ball towards deep midwicket, no time for him to get back on strike though"
+    },
+    {
+      "ball": 16.5,
+      "isHighlight": true,
+      "text": "Patel to Ashwin, $$OUT$$ ,Ashwin is stumped, he was struggling to get a move on here, charged out to try a big shot, he misses and is so far out of the crease that even though Wriddhiman Saha juggled the ball once before taking the bails off, Ashwin had no chance"
+    },
+    {
+      "ball": 16.5,
+      "isHighlight": false,
+      "text": "$$R$$ $$Ashwin$$ $$st$$ $$†Saha$$ $$b$$ $$Patel$$ $$10$$ $$(19m$$ $$11b$$ $$0x4$$ $$0x6)$$ $$SR:$$ $$90.90$$"
+    },
+    {
+      "ball": 16.6,
+      "isHighlight": false,
+      "text": "Patel to Sharma,no run,length ball on middle and off, driven back to the bowler, just three runs this over when they needed 16 an over, is that the game, or  does Dhoni still have something in the bag?"
+    },
+    {
+      "ball": 17.1,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,1 wide,way outside off, that's a wide"
+    },
+    {
+      "ball": 17.1,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,no run,short of length and angling away, off the bottom of the bat towards midwicket"
+    },
+    {
+      "ball": 17.1,
+      "isHighlight": false,
+      "text": "Barath: \"67 runs in the last 11 overs.Can you believe that?Looks like runouts win knock outs just like catches win matches\""
+    },
+    {
+      "ball": 17.1,
+      "isHighlight": false,
+      "text": "Dhoni calling for a new bat"
+    },
+    {
+      "ball": 17.2,
+      "isHighlight": true,
+      "text": "Johnson to Dhoni,1 no ball,that should be game, set and match, Johnson has bowled a fast yorker that lasers into the base of middle stump, oh hang on!  $$Drama$$ , a huge no-ball here, Johnson has overstepped by a long way, Priety Zinta had celebrated so much that she was almost in tears. now I don't know how she feels"
+    },
+    {
+      "ball": 17.2,
+      "isHighlight": false,
+      "text": "$$Free-hit$$"
+    },
+    {
+      "ball": 17.2,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,no run,Dhoni winds up for the big hit but he misses as he looks to clear square leg, a length ball on the pads"
+    },
+    {
+      "ball": 17.3,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,2 runs,full and on middle stump, thumped towards deep square leg for a couple, not happening for Dhoni today"
+    },
+    {
+      "ball": 17.4,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,1 wide,a bouncer, that is surely too high, yup, a wide"
+    },
+    {
+      "ball": 17.4,
+      "isHighlight": false,
+      "text": "Taimoor Khalid: \"Wow ... 39* matches and no run by Mohit Sharma .. This sure is gonna be a record of some sort ...\" Next 'highest' is Andy Caddick off 16 matches"
+    },
+    {
+      "ball": 17.4,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,no run,short of length ball outside off, slapped towards backward point"
+    },
+    {
+      "ball": 17.5,
+      "isHighlight": false,
+      "text": "Johnson to Dhoni,1 run,length ball on the pads, tucked for a single"
+    },
+    {
+      "ball": 17.5,
+      "isHighlight": false,
+      "text": "Casmir Raj: \"Even Raina can't hit 56 from 15 balls....\""
+    },
+    {
+      "ball": 17.6,
+      "isHighlight": false,
+      "text": "Johnson to Sharma,no run,Mohit Sharma still waiting his first run in Twenty20s, a yorker is defended back to the bowler"
+    },
+    {
+      "ball": 17.6,
+      "isHighlight": false,
+      "text": "Chad: \"Even Chris Martin the Almighty Phantom is impressed with Mohit Sharma's batting record.\""
+    },
+    {
+      "ball": 18.1,
+      "isHighlight": false,
+      "text": "Patel to Dhoni,no run,flat and quicker, short ball angling down leg, Dhoni looking for a big hit but is struck on the body"
+    },
+    {
+      "ball": 18.2,
+      "isHighlight": false,
+      "text": "Patel to Dhoni,no run,lashes this towards long-on, but declines the single"
+    },
+    {
+      "ball": 18.3,
+      "isHighlight": true,
+      "text": "Patel to Dhoni, $$FOUR$$ ,hammers this wider, long-on flies to his right to try cut that off, but he can't"
+    },
+    {
+      "ball": 18.4,
+      "isHighlight": true,
+      "text": "Patel to Dhoni, $$SIX$$ ,Dhoni skips out and thumps that over long-off for six more"
+    },
+    {
+      "ball": 18.4,
+      "isHighlight": false,
+      "text": "Can't be easy for a youngster like Askhar to bowl at this stage"
+    },
+    {
+      "ball": 18.5,
+      "isHighlight": false,
+      "text": "Patel to Dhoni,no run,charges out again, slammed towards long-off, straight at the fielder"
+    },
+    {
+      "ball": 18.6,
+      "isHighlight": false,
+      "text": "Patel to Dhoni,4 byes,swings and misses, the ball misses the stumps, the keeper misses the ball, and it's byes"
+    },
+    {
+      "ball": 19.1,
+      "isHighlight": false,
+      "text": "Awana to Sharma,1 run,length ball is inside-edge to the leg side, Mohit gets his first T20 run"
+    },
+    {
+      "ball": 19.2,
+      "isHighlight": false,
+      "text": "Awana to Dhoni,no run,wide outside off, Dhoni reaches out for that, slapped towards cover"
+    },
+    {
+      "ball": 19.2,
+      "isHighlight": false,
+      "text": "Vinodh: \"Akshar Patel - what a consistent performer.\""
+    },
+    {
+      "ball": 19.3,
+      "isHighlight": false,
+      "text": "Awana to Dhoni, $$FOUR$$ ,short and well outside off, edges that past the keeper to the third-man boundary"
+    },
+    {
+      "ball": 19.3,
+      "isHighlight": false,
+      "text": "Camera pans to the CSK dugout, which is filled with glum faces"
+    },
+    {
+      "ball": 19.4,
+      "isHighlight": false,
+      "text": "Awana to Dhoni,no run,full and outside off, slapped towards mid-off"
+    },
+    {
+      "ball": 19.5,
+      "isHighlight": false,
+      "text": "Awana to Dhoni, $$FOUR$$ ,low full toss is whipped towards the midwicket boundary, all moot now, still the fielder in the deep dives in an attempt to cut it off"
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": true,
+      "text": "Awana to Dhoni, $$SIX$$ ,Dhoni finishes it with a six, but there is to be no victory for Super Kings, it is Kings XI who are celebrating, they are into their first final of the IPL, Sehwag comes down from the dressing room to celebrate with his team, the most excited of the lot is Priety Zinta, Super Kings are deflated"
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "$$MS$$ $$Dhoni$$ : \"I think definitely it was something we could have achieved, the reason being suresh the way he batted, I think in the middle overs there was some very irresponsible cricket by some of the most experienced international cricketers, so I think definitely we need to have a look."
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "\"One of the facts is one of our retained players, we lost at the start itself, but we still made the playoffs, we did really well in the tournament. I had belief in my bowling that they will let them score more than 200 runs (smiles). Happy for Priety though.\" Well, not often you hear such strong words from Dhoni, usually quite composed."
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "Rahul: \"Never seen Dhoni this angry and negative in his comments!\""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "mohan: \"Dhoni has every reason to be furious.. with 100 from first 6 overs its surely gettable total. but yes all their overseas players let down. \""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "Sid: \"That was a funny statement from Dhoni on his bowlers. On a pitch like this,you can always expect a 200+ from KXIP. So was also expected from CSK. But apart from Raina,all failed.\""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "$$Sanjay$$ $$Bangar:$$  \"To beat a team like CSK thrice in a season is an achievement for us, our team showed great character, especially after CSK scored 100 in six overs.\""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "Time for the presentation ceremony."
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "$$George$$ $$Bailey:$$  \"What an innings from Viru, set the platform, backed up by Miller at the end, almost overshadowed by Suresh's innings. We have seen two extraordinary innings tonight. The belief in the group after the first Powerplay was terrific, I thought Awana came back very well, our spinners have done the job again. Raina was unlucky wasn't he (laughs), our fielding has been pretty good right through the tournament.\""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "Man of the Match is  $$Virender$$ $$Sehwag:$$  \"I had a chat with SRT as well, put the conscious effort to stay till the 10-12th over. I promised someone that there is one innings I have to play, maybe it will come in the playoffs, today is Ness Wadia's boirthday, I told him I will give him the best birthday gift. Whenever I got out, my son kept telling me, 'papa you are not scoring runs,' I told him hold on, there is still time.\""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "Keshabraj: \"Nothing for Raina !! ?? \" Pretty harsh given that they hand out so many awards in every game."
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "Ravi: \"Its strange, he is criticizing the same players who made it possible for CSK to reach this stage. Smith and McCullum have scored most of the runs for CSK this season.\""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "sunny: \"Seems like captain cool lost his cool in the end...\""
+    },
+    {
+      "ball": 19.6,
+      "isHighlight": false,
+      "text": "Whoah, I need to catch my breath. That was some game, thanks everyone for the company. See you soon."
+    }
+  ],
+  "name": "Chennai Super Kings v Kings XI Punjab",
+  "innings": "Chennai Super Kings  innings",
+  "url": "http://www.espncricinfo.com/indian-premier-league-2014/engine/match/734047.html?innings=2;view=commentary",
+  "match_num": 59
+}
