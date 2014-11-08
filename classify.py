@@ -20,16 +20,39 @@ def main(args):
     with open(args.custominfofile) as f:
         custom_info = json.load(f)
 
-    result = []
-    for testset in test_data:
-        testset['commmentary'] = classify_list( classifier, testset['commentary'], custom_info, args.verbose )
-        result.append(testset)
+    test_data['commentary'] = classify_list( classifier, test_data['commentary'], custom_info, args.verbose )
+
+    if args.sort_and_limit:
+        total_commentary = len(test_data['commentary'])
+        sorted_commentary = sorted( test_data['commentary'], key=lambda commentary: commentary['score'], reverse=True)
+
+        test_data['commentary'] = []
+
+        for highlight in sorted_commentary[:int(total_commentary/5)]:
+            highlight['isHighlight'] = True
+            test_data['commentary'].append( highlight )
+
+        for highlight in sorted_commentary[int(total_commentary/5):]:
+            highlight['isHighlight'] = False
+            test_data['commentary'].append( highlight )
+
+        test_data['commentary'] = sorted( test_data['commentary'], key=lambda commentary: commentary['index'] )
+
+        firstball_found = lastball_found = False
+        for i in range(0,len(test_data['commentary'])):
+            if test_data['commentary'][i]['ball'] == 0.1 and not firstball_found:
+                test_data['commentary'][i]['isHighlight'] == True
+                firstball_found = True
+            if test_data['commentary'][i]['ball'] == test_data['commentary'][-1]['ball'] and not lastball_found:
+                test_data['commentary'][i]['isHighlight'] = True
+                lastball_found = True
 
     if (args.outputfile == '-'):
         outfile = sys.stdout
     else:
         outfile = open(args.outputfile, 'w')
-    json.dump(testset,outfile)
+
+    json.dump(test_data,outfile)
     outfile.close()
 
 def classify_list(classifier, commentary_list, custom_info, verbose_mode):
@@ -38,6 +61,7 @@ def classify_list(classifier, commentary_list, custom_info, verbose_mode):
     lastball_found = True
     lastball = commentary_list[-1]['ball']
 
+    index = 0
     for commentary in commentary_list:
         processed_result = process_commentary(commentary, custom_info, 'test')
 
@@ -63,6 +87,8 @@ def classify_list(classifier, commentary_list, custom_info, verbose_mode):
             #     commentary['false result'] = True
             commentary['features'] = features
 
+        commentary['index'] = index
+        index += 1
         highlight_result.append( commentary )
 
     return highlight_result
@@ -74,6 +100,7 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--output', help="Specify output file. Use '-' to print to stdout", action='store',default='output.json',dest='outputfile')
     parser.add_argument('-c', '--custom', help="Specify custom information file", action='store', dest='custominfofile', default='data/custom_information.json')
     parser.add_argument('-v', '--verbose', help="Specify if verbose output required, will add feature info to each commentary in json output", action='store_true', dest='verbose', default=False )
+    parser.add_argument('-s', '--sort-and-limit', help="Specify whether to sort and limit the classified highlights", action='store_true', dest='sort_and_limit', default=False)
 
     args = parser.parse_args()
     main(args)
