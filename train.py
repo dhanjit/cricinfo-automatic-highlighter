@@ -61,12 +61,19 @@ def getwordset(tagged_commentaries, topN_words, ignore_words):
     allwords_fd = nltk.probability.FreqDist()
     allwords_tagged_fd = nltk.probability.ConditionalFreqDist()
 
-    for tagged_commmentary in tagged_commentaries:
-        for word in tagged_commmentary[0]['processed_text']:
-            if word not in ignore_words :
-                allwords.add(word)
-                allwords_fd[word] += 1
-                allwords_tagged_fd[tagged_commmentary[1]][word] += 1
+    def add_to_wordset( word ):
+        allwords.add(word)
+        allwords_fd[word] += 1
+        allwords_tagged_fd[tagged_commentary[1]][word] += 1
+
+    for tagged_commentary in tagged_commentaries:
+        possible_feature_words = [ word for word in tagged_commentary[0]['processed_text'] if word not in ignore_words ]
+
+        for i in range(0,len(possible_feature_words)):
+            add_to_wordset( possible_feature_words[i] )
+
+            if i+1 < len(possible_feature_words):
+                add_to_wordset( possible_feature_words[i] + ' ' + possible_feature_words[i+1] )
 
     pos_word_count = allwords_tagged_fd[True].N()
     neg_word_count = allwords_tagged_fd[False].N()

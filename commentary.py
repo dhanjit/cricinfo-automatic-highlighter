@@ -64,7 +64,7 @@ class FeatureExtractor:
 
     # Return the feature set of the commentary
     def featureset(self, commentary):
-        words = set(commentary['processed_text'])
+        words = commentary['processed_text']
         features = {}
 
         features[ '$exciting$'] = False
@@ -91,8 +91,16 @@ class FeatureExtractor:
 
         features[ '$exciting-count$' ] = round( features[ '$exciting-count$' ] / self.exciting_count_factor )
 
+        def bigram_exists( bigram ):
+            bigram = bigram.split()
+            return
+
         for word in self.wordset['best_words']:
-            features['contains(%s)' % word ] = ( word in words )
+            if ' ' in word:
+                bigram = word.split()
+                features['contains(%s)' % word ] = any( bigram[0] is words[i] and bigram[1] is words[i+1] for i in range(0,len(words)-1) )
+            else:
+                features['contains(%s)' % word ] = ( word in words )
 
         return features
 
