@@ -3,6 +3,9 @@ import string
 import nltk
 
 def process_commentary(commentary, custom_info, method):
+    if 'text' not in commentary or 'ball' not in commentary or 'isHighlight' not in commentary:
+        return False
+
     if ": \\\"" in commentary['text'] or commentary['ball'] == 0:
         return False
 
