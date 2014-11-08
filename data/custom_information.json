@@ -12,6 +12,7 @@
       "century": true,
       "hundred": true,
       "milestone": true,
+      "appeal": true,
       "fifty": true,
       "100" : true,
       "50" : true

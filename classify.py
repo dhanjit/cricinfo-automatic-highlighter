@@ -47,6 +47,11 @@ def main(args):
                 test_data['commentary'][i]['isHighlight'] = True
                 lastball_found = True
 
+    test_data['average_score'] = 0
+    for commentary in test_data['commentary']:
+        test_data['average_score'] += commentary['score']
+    test_data['average_score'] /= len(test_data['commentary'])
+
     if (args.outputfile == '-'):
         outfile = sys.stdout
     else:
@@ -73,7 +78,6 @@ def classify_list(classifier, commentary_list, custom_info, verbose_mode):
 
         commentary['isHighlight'] = prob_dist.max()
         commentary['score' ] = prob_dist.prob( True )
-
         if not firstball_found and commentary['ball'] == 0.1 :
             firstball_found = True
             commentary['isHighlight'] = True
