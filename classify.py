@@ -20,7 +20,7 @@ def main(args):
     with open(args.custominfofile) as f:
         custom_info = json.load(f)
 
-    test_data['commentary'] = classify_list( classifier, test_data['commentary'], custom_info, args.verbose )
+    test_data['commentary'] = classify_list( classifier, test_data['commentary'], custom_info, args.min_score, args.verbose )
 
     if args.sort_and_limit:
         total_commentary = len(test_data['commentary'])
@@ -60,7 +60,7 @@ def main(args):
     json.dump(test_data,outfile)
     outfile.close()
 
-def classify_list(classifier, commentary_list, custom_info, verbose_mode):
+def classify_list(classifier, commentary_list, custom_info, min_score, verbose_mode):
     highlight_result = []
     firstball_found = False
     lastball_found = True
@@ -76,8 +76,9 @@ def classify_list(classifier, commentary_list, custom_info, verbose_mode):
         features = classifier.feature_extractor.featureset(commentary)
         prob_dist = classifier.prob_classify(features)
 
-        commentary['isHighlight'] = prob_dist.max()
-        commentary['score' ] = prob_dist.prob( True )
+        commentary['score'] = prob_dist.prob( True )
+        commentary['isHighlight'] = commentary['score'] > min_score
+
         if not firstball_found and commentary['ball'] == 0.1 :
             firstball_found = True
             commentary['isHighlight'] = True
@@ -105,6 +106,7 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--custom', help="Specify custom information file", action='store', dest='custominfofile', default='data/custom_information.json')
     parser.add_argument('-v', '--verbose', help="Specify if verbose output required, will add feature info to each commentary in json output", action='store_true', dest='verbose', default=False )
     parser.add_argument('-s', '--sort-and-limit', help="Specify whether to sort and limit the classified highlights", action='store_true', dest='sort_and_limit', default=False)
+    parser.add_argument('-m', '--min-score', help="Specify min score for setting a commentary as a highlight", action = 'store', dest='min_score',default=0.5, type=float)
 
     args = parser.parse_args()
     main(args)
