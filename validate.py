@@ -37,6 +37,8 @@ if __name__ == '__main__':
 	metrics['completeness'] = completeness
 	metrics['accuracy'] = accuracy
 	metrics['missed_highlights'] = missed_highlights
-#	print metrics
-	with open(output_file, 'wb') as fo:
-		json.dump(metrics, fo)
+
+        if (args.outputfile == '-'):
+                output_file = sys.stdout
+
+        json.dump(metrics, output_file)
