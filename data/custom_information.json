@@ -1,4 +1,8 @@
 {
+  "invalid commentary": {
+    ": \"": true,
+    "CricIQ": true
+  },
   "combinable phrases": {
     "1 run": true,
     "1 wide": true,

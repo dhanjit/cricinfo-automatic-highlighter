@@ -6,7 +6,7 @@ def process_commentary(commentary, custom_info, method):
     if 'text' not in commentary or 'ball' not in commentary or 'isHighlight' not in commentary:
         return False
 
-    if ": \"" in commentary['text'] or commentary['ball'] == 0:
+    if any( word in commentary['text'] for word in custom_info['invalid commentary'] ) or commentary['ball'] == 0:
         return False
 
     text = commentary['text']
