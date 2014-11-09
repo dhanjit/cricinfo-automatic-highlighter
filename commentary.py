@@ -58,7 +58,7 @@ class FeatureExtractor:
         self.custom_info = custom_info
         self.wordset = wordset
 
-        self.length_factor = feature_config.get( 'length_factor', 10 )
+        self.length_factor = feature_config.get( 'length_factor', 5 )
         self.length_norm = feature_config.get( 'length_norm', 2 )
         self.exciting_count_factor = feature_config.get( 'exciting_count_factor', 2 )
 
@@ -73,7 +73,7 @@ class FeatureExtractor:
 
         features[ '$important-event$' ] = False
 
-        features[ '$longlength$' ] = ( len(commentary['processed_text']) / self.length_factor > self.length_norm )
+        features[ '$longlength$' ] = round( len(commentary['processed_text']) / self.length_factor )
 
         features[ '$syntactically-important$' ] = False
 
