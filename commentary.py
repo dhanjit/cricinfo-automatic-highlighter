@@ -2,6 +2,18 @@ import re
 import string
 import nltk
 
+def remove_punctuations(text):
+    punctuations = string.punctuation
+    valid_punctuations = '$!'
+    token_punctuations = '!'
+    for punctuation in valid_punctuations:
+        punctuations = punctuations.replace( punctuation,'')
+    for punctuation in punctuations:
+        text = text.replace(punctuation,' ')
+    for punctuation in token_punctuations:
+        text = text.replace(punctuation, ' ' + punctuation + ' ' )
+    return text
+
 def process_commentary(commentary, custom_info, method):
     if 'text' not in commentary or 'ball' not in commentary or 'isHighlight' not in commentary:
         return False
@@ -9,41 +21,29 @@ def process_commentary(commentary, custom_info, method):
     if any( word in commentary['text'] for word in custom_info['invalid commentary'] ) or commentary['ball'] == 0:
         return False
 
-    text = commentary['text']
+    text = ' '+commentary['text'].lower().strip().replace('\n',' ')+' '
+    text = remove_punctuations(text)
+
     for phrase in custom_info['combinable phrases']:
-        pattern = re.compile(phrase, re.IGNORECASE)
-        combinedphrase = phrase.replace(' ','')
-        text = pattern.sub(combinedphrase,text)
+        combinedphrase = ' '+phrase.replace(' ','')+' '
+        text = text.replace(' '+phrase+' ',combinedphrase)
 
-    # print(text)
-    punctuations = string.punctuation
-    valid_punctuations = '$!'
-    token_punctuations = '!'
-    for punctuation in valid_punctuations:
-        punctuations = punctuations.replace( punctuation,'')
-
-    for punctuation in punctuations:
-        text = text.replace(punctuation,' ')
-
-    for punctuation in token_punctuations:
-        text = text.replace(punctuation, ' ' + punctuation + ' ' )
+    for name in custom_info['players']:
+        name = ' '+name+' '
+        text = text.replace(name,' ')
 
     words = text.split()
-#    print(words)
-#    print( [ word for word in words if word not in string.punctuation ] )
 
     def strip_markers(word):
         if word[:2] == word[-2:] == '$$':
             return word[2:-2]
         else:
             return word
-    # print(words)
-    filtered_words = [ word.lower() for word in words if strip_markers(word).lower() not in nltk.corpus.stopwords.words('english') ]
-    filtered_words = [ word for word in filtered_words if word not in custom_info['players'] ]
-    #print('\t'+str(filtered_words))
+
+    filtered_words = [ word for word in words if strip_markers(word).lower() not in nltk.corpus.stopwords.words('english') ]
+
     if all( word[:2] == '$$' or word[-2:] == '$$' for word in filtered_words ):
         return False
-    #print(filtered_words)
 
     commentary[ 'processed_text' ] = filtered_words
     if method == 'train':

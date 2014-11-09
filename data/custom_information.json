@@ -6106,6 +6106,8 @@
     "six": true
   },
   "players": {
+    "suman": "{}",
+    "de": "{}",
     "aaron finch": {
       "team": "SRH",
       "fullname": "Aaron Finch"
