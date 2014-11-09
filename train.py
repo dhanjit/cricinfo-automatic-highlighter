@@ -95,7 +95,7 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--train', help="Specify training data set file, format: JSON", action='store', dest='training_file', default='data/trainingset.json')
     parser.add_argument('-c', '--custom', help="Specify custom information file", action='store', dest='custominfo_file', default='data/custom_information.json')
     parser.add_argument('-l', '--classifier', help="Specify classifier output file", action='store', dest='classifier_file', default='classifier.pickle')
-    parser.add_argument('-b', '--topN_words', help="Set a limit to take the most N number of informative words", action='store', dest='topN_words', default=20,type=int)
+    parser.add_argument('-b', '--topN_words', help="Set a limit to take the most N number of informative words", action='store', dest='topN_words', default=10,type=int)
     parser.add_argument('--length-norm', help="Feature Config: Set commentary length to boolean converter value", action='store', dest='length_norm', type=int)
     parser.add_argument('--length-factor', help="Feature Config: Set commentary length factor value", action='store', dest='length_factor', type=int)
     parser.add_argument('--exciting-count-factor', help="Feature Config: Set exciting word count factor value", action='store', dest='exciting_count_factor', type=int)
