@@ -4,6 +4,7 @@ import json
 from commentary import process_commentary
 import re
 import sys
+import math
 
 def main(args):
 
@@ -20,7 +21,7 @@ def main(args):
     with open(args.custominfofile) as f:
         custom_info = json.load(f)
 
-    test_data['commentary'] = classify_list( classifier, test_data['commentary'], custom_info, args.min_score, args.verbose )
+    test_data['commentary'] = classify_list( classifier, test_data['commentary'], custom_info, args.min_score, args.score_logbase, args.verbose )
 
     if args.sort_and_limit:
         total_commentary = len(test_data['commentary'])
@@ -48,6 +49,7 @@ def main(args):
                 lastball_found = True
 
     test_data['average_score'] = 0
+
     for commentary in test_data['commentary']:
         test_data['average_score'] += commentary['score']
     test_data['average_score'] /= len(test_data['commentary'])
@@ -60,10 +62,10 @@ def main(args):
     json.dump(test_data,outfile)
     outfile.close()
 
-def classify_list(classifier, commentary_list, custom_info, min_score, verbose_mode):
+def classify_list(classifier, commentary_list, custom_info, min_score, score_logbase, verbose_mode):
     highlight_result = []
     firstball_found = False
-    lastball_found = True
+    lastball_found = False
     lastball = commentary_list[-1]['ball']
 
     index = 0
@@ -76,7 +78,7 @@ def classify_list(classifier, commentary_list, custom_info, min_score, verbose_m
         features = classifier.feature_extractor.featureset(commentary)
         prob_dist = classifier.prob_classify(features)
 
-        commentary['score'] = prob_dist.prob( True )
+        commentary['score'] = scoring_function( prob_dist.prob( True ) , score_logbase )
         commentary['isHighlight'] = commentary['score'] > min_score
 
         if not firstball_found and commentary['ball'] == 0.1 :
@@ -98,7 +100,20 @@ def classify_list(classifier, commentary_list, custom_info, min_score, verbose_m
         index += 1
         highlight_result.append( commentary )
 
+        if lastball_found:
+            break
+
     return highlight_result
+
+def scoring_function( probability, logbase ):
+    # if probability > 0.5:
+    #     score = 0.5+( math.log(probability-0.5+logbase-1, logbase )   - math.log( logbase-1, logbase ) )  / ( 1 - math.log( logbase-1, logbase) )
+    # else:
+    #     score = 0.5-( math.log( 0.5-probability +logbase-1 , logbase )   - math.log( logbase-1, logbase ) )  / ( 1 - math.log( logbase-1, logbase) )
+
+    #score = math.log(probability*100,logbase)/math.log(100,logbase)
+
+    return probability
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -109,6 +124,7 @@ if __name__ == '__main__':
     parser.add_argument('-v', '--verbose', help="Specify if verbose output required, will add feature info to each commentary in json output", action='store_true', dest='verbose', default=False )
     parser.add_argument('-s', '--sort-and-limit', help="Specify whether to sort and limit the classified highlights", action='store_true', dest='sort_and_limit', default=False)
     parser.add_argument('-m', '--min-score', help="Specify min score for setting a commentary as a highlight", action = 'store', dest='min_score',default=0.5, type=float)
+    parser.add_argument('--score-logbase', help="Specify parameter for logarithmic score distribution", action = 'store', dest='score_logbase', default=2,type=float)
 
     args = parser.parse_args()
     main(args)
