@@ -15,6 +15,7 @@ def remove_punctuations(text):
     return text
 
 def process_commentary(commentary, custom_info, method):
+
     if 'text' not in commentary or 'ball' not in commentary or 'isHighlight' not in commentary:
         return False
 
@@ -35,12 +36,14 @@ def process_commentary(commentary, custom_info, method):
     words = text.split()
 
     def strip_markers(word):
-        if word[:2] == word[-2:] == '$$':
-            return word[2:-2]
-        else:
-            return word
+        newword = word
+        if word[:2] == '$$':
+            newword = newword[2:]
+        if word[-2:] == '$$':
+            newword = newword[:-2]
+        return newword
 
-    filtered_words = [ word for word in words if strip_markers(word).lower() not in nltk.corpus.stopwords.words('english') ]
+    filtered_words = [ word for word in words if word not in nltk.corpus.stopwords.words('english') ]
 
     if all( word[:2] == '$$' or word[-2:] == '$$' for word in filtered_words ):
         return False
